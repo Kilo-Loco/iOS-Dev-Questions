@@ -8,12 +8,22 @@
 
 /* Begin PBXBuildFile section */
 		9EA0677322BDF0AF006326D1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EA0677222BDF0AF006326D1 /* AppDelegate.swift */; };
-		9EA0677522BDF0AF006326D1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EA0677422BDF0AF006326D1 /* ViewController.swift */; };
-		9EA0677822BDF0AF006326D1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9EA0677622BDF0AF006326D1 /* Main.storyboard */; };
 		9EA0677B22BDF0AF006326D1 /* iOS_Dev_Questions.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 9EA0677922BDF0AF006326D1 /* iOS_Dev_Questions.xcdatamodeld */; };
 		9EA0677D22BDF0B1006326D1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9EA0677C22BDF0B1006326D1 /* Assets.xcassets */; };
 		9EA0678022BDF0B1006326D1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9EA0677E22BDF0B1006326D1 /* LaunchScreen.storyboard */; };
 		9EA0678B22BDF0B1006326D1 /* iOS_Dev_QuestionsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EA0678A22BDF0B1006326D1 /* iOS_Dev_QuestionsTests.swift */; };
+		9EA0679622BDF536006326D1 /* AppContext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EA0679522BDF536006326D1 /* AppContext.swift */; };
+		9EA0679822BDF94A006326D1 /* UserSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EA0679722BDF94A006326D1 /* UserSettings.swift */; };
+		9EA0679A22BDFC1D006326D1 /* GlobalTypealiases.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EA0679922BDFC1D006326D1 /* GlobalTypealiases.swift */; };
+		9EA0679C22BDFC52006326D1 /* AppFlow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EA0679B22BDFC52006326D1 /* AppFlow.swift */; };
+		9EA0679E22BDFD81006326D1 /* OnboardingFlow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EA0679D22BDFD81006326D1 /* OnboardingFlow.swift */; };
+		9EA067A022BE0140006326D1 /* InitialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EA0679F22BE0140006326D1 /* InitialViewController.swift */; };
+		9EA067A222BE02EB006326D1 /* AuthFlow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EA067A122BE02EB006326D1 /* AuthFlow.swift */; };
+		9EA067A422BE05AD006326D1 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EA067A322BE05AD006326D1 /* User.swift */; };
+		9EA067A622BE0622006326D1 /* AuthContext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EA067A522BE0622006326D1 /* AuthContext.swift */; };
+		9EA067A822BE0C28006326D1 /* MainFlow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EA067A722BE0C28006326D1 /* MainFlow.swift */; };
+		9EA067AA22BE0C9B006326D1 /* MainContext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EA067A922BE0C9B006326D1 /* MainContext.swift */; };
+		9EA067AC22BE0E60006326D1 /* PersistenceInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EA067AB22BE0E60006326D1 /* PersistenceInteractor.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,8 +39,6 @@
 /* Begin PBXFileReference section */
 		9EA0676F22BDF0AF006326D1 /* iOS Dev Questions.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "iOS Dev Questions.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9EA0677222BDF0AF006326D1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		9EA0677422BDF0AF006326D1 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		9EA0677722BDF0AF006326D1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		9EA0677A22BDF0AF006326D1 /* iOS_Dev_Questions.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = iOS_Dev_Questions.xcdatamodel; sourceTree = "<group>"; };
 		9EA0677C22BDF0B1006326D1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9EA0677F22BDF0B1006326D1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -38,6 +46,18 @@
 		9EA0678622BDF0B1006326D1 /* iOS Dev QuestionsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "iOS Dev QuestionsTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9EA0678A22BDF0B1006326D1 /* iOS_Dev_QuestionsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iOS_Dev_QuestionsTests.swift; sourceTree = "<group>"; };
 		9EA0678C22BDF0B1006326D1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9EA0679522BDF536006326D1 /* AppContext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppContext.swift; sourceTree = "<group>"; };
+		9EA0679722BDF94A006326D1 /* UserSettings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserSettings.swift; sourceTree = "<group>"; };
+		9EA0679922BDFC1D006326D1 /* GlobalTypealiases.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlobalTypealiases.swift; sourceTree = "<group>"; };
+		9EA0679B22BDFC52006326D1 /* AppFlow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppFlow.swift; sourceTree = "<group>"; };
+		9EA0679D22BDFD81006326D1 /* OnboardingFlow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingFlow.swift; sourceTree = "<group>"; };
+		9EA0679F22BE0140006326D1 /* InitialViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InitialViewController.swift; sourceTree = "<group>"; };
+		9EA067A122BE02EB006326D1 /* AuthFlow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthFlow.swift; sourceTree = "<group>"; };
+		9EA067A322BE05AD006326D1 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		9EA067A522BE0622006326D1 /* AuthContext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthContext.swift; sourceTree = "<group>"; };
+		9EA067A722BE0C28006326D1 /* MainFlow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainFlow.swift; sourceTree = "<group>"; };
+		9EA067A922BE0C9B006326D1 /* MainContext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainContext.swift; sourceTree = "<group>"; };
+		9EA067AB22BE0E60006326D1 /* PersistenceInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersistenceInteractor.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,13 +99,10 @@
 		9EA0677122BDF0AF006326D1 /* iOS Dev Questions */ = {
 			isa = PBXGroup;
 			children = (
-				9EA0677222BDF0AF006326D1 /* AppDelegate.swift */,
-				9EA0677422BDF0AF006326D1 /* ViewController.swift */,
-				9EA0677622BDF0AF006326D1 /* Main.storyboard */,
-				9EA0677C22BDF0B1006326D1 /* Assets.xcassets */,
-				9EA0677E22BDF0B1006326D1 /* LaunchScreen.storyboard */,
-				9EA0678122BDF0B1006326D1 /* Info.plist */,
-				9EA0677922BDF0AF006326D1 /* iOS_Dev_Questions.xcdatamodeld */,
+				9EA067B122BE152D006326D1 /* App */,
+				9EA067AD22BE14D9006326D1 /* Auth */,
+				9EA067AE22BE14EF006326D1 /* MainApp */,
+				9EA067B322BE159E006326D1 /* Onboarding */,
 			);
 			path = "iOS Dev Questions";
 			sourceTree = "<group>";
@@ -97,6 +114,59 @@
 				9EA0678C22BDF0B1006326D1 /* Info.plist */,
 			);
 			path = "iOS Dev QuestionsTests";
+			sourceTree = "<group>";
+		};
+		9EA067AD22BE14D9006326D1 /* Auth */ = {
+			isa = PBXGroup;
+			children = (
+				9EA067A122BE02EB006326D1 /* AuthFlow.swift */,
+				9EA067A522BE0622006326D1 /* AuthContext.swift */,
+			);
+			path = Auth;
+			sourceTree = "<group>";
+		};
+		9EA067AE22BE14EF006326D1 /* MainApp */ = {
+			isa = PBXGroup;
+			children = (
+				9EA067A722BE0C28006326D1 /* MainFlow.swift */,
+				9EA067A922BE0C9B006326D1 /* MainContext.swift */,
+			);
+			name = MainApp;
+			sourceTree = "<group>";
+		};
+		9EA067B122BE152D006326D1 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				9EA0677C22BDF0B1006326D1 /* Assets.xcassets */,
+				9EA0677E22BDF0B1006326D1 /* LaunchScreen.storyboard */,
+				9EA0677222BDF0AF006326D1 /* AppDelegate.swift */,
+				9EA0678122BDF0B1006326D1 /* Info.plist */,
+				9EA0677922BDF0AF006326D1 /* iOS_Dev_Questions.xcdatamodeld */,
+				9EA0679522BDF536006326D1 /* AppContext.swift */,
+				9EA0679B22BDFC52006326D1 /* AppFlow.swift */,
+				9EA0679F22BE0140006326D1 /* InitialViewController.swift */,
+				9EA0679722BDF94A006326D1 /* UserSettings.swift */,
+				9EA067AB22BE0E60006326D1 /* PersistenceInteractor.swift */,
+				9EA067A322BE05AD006326D1 /* User.swift */,
+				9EA0679922BDFC1D006326D1 /* GlobalTypealiases.swift */,
+				9EA067B222BE1553006326D1 /* Resources */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		9EA067B222BE1553006326D1 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		9EA067B322BE159E006326D1 /* Onboarding */ = {
+			isa = PBXGroup;
+			children = (
+				9EA0679D22BDFD81006326D1 /* OnboardingFlow.swift */,
+			);
+			path = Onboarding;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -182,7 +252,6 @@
 			files = (
 				9EA0678022BDF0B1006326D1 /* LaunchScreen.storyboard in Resources */,
 				9EA0677D22BDF0B1006326D1 /* Assets.xcassets in Resources */,
-				9EA0677822BDF0AF006326D1 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -200,9 +269,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9EA0677522BDF0AF006326D1 /* ViewController.swift in Sources */,
+				9EA0679C22BDFC52006326D1 /* AppFlow.swift in Sources */,
+				9EA0679E22BDFD81006326D1 /* OnboardingFlow.swift in Sources */,
+				9EA067A022BE0140006326D1 /* InitialViewController.swift in Sources */,
+				9EA0679622BDF536006326D1 /* AppContext.swift in Sources */,
 				9EA0677322BDF0AF006326D1 /* AppDelegate.swift in Sources */,
+				9EA0679A22BDFC1D006326D1 /* GlobalTypealiases.swift in Sources */,
+				9EA0679822BDF94A006326D1 /* UserSettings.swift in Sources */,
+				9EA067AA22BE0C9B006326D1 /* MainContext.swift in Sources */,
 				9EA0677B22BDF0AF006326D1 /* iOS_Dev_Questions.xcdatamodeld in Sources */,
+				9EA067AC22BE0E60006326D1 /* PersistenceInteractor.swift in Sources */,
+				9EA067A822BE0C28006326D1 /* MainFlow.swift in Sources */,
+				9EA067A222BE02EB006326D1 /* AuthFlow.swift in Sources */,
+				9EA067A422BE05AD006326D1 /* User.swift in Sources */,
+				9EA067A622BE0622006326D1 /* AuthContext.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -225,14 +305,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		9EA0677622BDF0AF006326D1 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				9EA0677722BDF0AF006326D1 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		9EA0677E22BDF0B1006326D1 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -366,7 +438,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 5K99777NES;
-				INFOPLIST_FILE = "iOS Dev Questions/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/iOS Dev Questions/App/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -384,7 +456,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 5K99777NES;
-				INFOPLIST_FILE = "iOS Dev Questions/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/iOS Dev Questions/App/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
