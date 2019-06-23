@@ -12,8 +12,9 @@ import UIKit
 /// This should mirror the launch screen to seem indistigishable to the user
 final class InitialViewController: UIViewController {
 
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        view.backgroundColor = .white
+    override func loadView() {
+        let initialImageView = InitialImageView()
+        initialImageView.imageView.image = #imageLiteral(resourceName: "launchIcon")
+        view = initialImageView
     }
 }

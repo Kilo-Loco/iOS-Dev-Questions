@@ -1,5 +1,5 @@
 //
-//  MainFlow.swift
+//  SessionFlow.swift
 //  iOS Dev Questions
 //
 //  Created by Kyle Lee on 6/22/19.
@@ -8,16 +8,16 @@
 
 import UIKit
 
-/// Responsible for guiding the user through the main app
-final class MainFlow {
+/// Responsible for guiding the user through the app during a session
+final class SessionFlow {
     
     /// Called once the user has requested to logout and end their session
     var logout: EmptyClosure?
     
-    private let context: AuthContext
+    private let context: SessionContext
     private let userSettings: UserSettings
     
-    init(context: AuthContext = .init(), userSettings: UserSettings) {
+    init(context: SessionContext = .init(), userSettings: UserSettings) {
         self.context = context
         self.userSettings = userSettings
     }

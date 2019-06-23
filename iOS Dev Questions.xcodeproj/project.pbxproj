@@ -21,9 +21,19 @@
 		9EA067A222BE02EB006326D1 /* AuthFlow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EA067A122BE02EB006326D1 /* AuthFlow.swift */; };
 		9EA067A422BE05AD006326D1 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EA067A322BE05AD006326D1 /* User.swift */; };
 		9EA067A622BE0622006326D1 /* AuthContext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EA067A522BE0622006326D1 /* AuthContext.swift */; };
-		9EA067A822BE0C28006326D1 /* MainFlow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EA067A722BE0C28006326D1 /* MainFlow.swift */; };
-		9EA067AA22BE0C9B006326D1 /* MainContext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EA067A922BE0C9B006326D1 /* MainContext.swift */; };
+		9EA067A822BE0C28006326D1 /* SessionFlow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EA067A722BE0C28006326D1 /* SessionFlow.swift */; };
+		9EA067AA22BE0C9B006326D1 /* SessionContext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EA067A922BE0C9B006326D1 /* SessionContext.swift */; };
 		9EA067AC22BE0E60006326D1 /* PersistenceInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EA067AB22BE0E60006326D1 /* PersistenceInteractor.swift */; };
+		9EA067B722BE1A06006326D1 /* OnboardingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EA067B622BE1A06006326D1 /* OnboardingViewController.swift */; };
+		9EA067B922BE1A44006326D1 /* OnboardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EA067B822BE1A44006326D1 /* OnboardingView.swift */; };
+		9EA067BB22BE1AA0006326D1 /* OnboardingViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EA067BA22BE1AA0006326D1 /* OnboardingViewCell.swift */; };
+		9EA067BD22BE1B1A006326D1 /* OnboardData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EA067BC22BE1B1A006326D1 /* OnboardData.swift */; };
+		9EA067BF22BE29EE006326D1 /* InitialImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EA067BE22BE29EE006326D1 /* InitialImageView.swift */; };
+		9EA067C122BE7E56006326D1 /* UIColorExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EA067C022BE7E56006326D1 /* UIColorExtensions.swift */; };
+		9EA067C322BE82B3006326D1 /* OnboardingDataCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EA067C222BE82B3006326D1 /* OnboardingDataCollectionView.swift */; };
+		9EA067C722BE8BDF006326D1 /* OnboardingContext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EA067C622BE8BDF006326D1 /* OnboardingContext.swift */; };
+		9EA067C922BF4EE7006326D1 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EA067C822BF4EE7006326D1 /* SignUpViewController.swift */; };
+		9EA067CB22BFCF2B006326D1 /* IdentifiableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EA067CA22BFCF2B006326D1 /* IdentifiableCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,9 +65,19 @@
 		9EA067A122BE02EB006326D1 /* AuthFlow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthFlow.swift; sourceTree = "<group>"; };
 		9EA067A322BE05AD006326D1 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		9EA067A522BE0622006326D1 /* AuthContext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthContext.swift; sourceTree = "<group>"; };
-		9EA067A722BE0C28006326D1 /* MainFlow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainFlow.swift; sourceTree = "<group>"; };
-		9EA067A922BE0C9B006326D1 /* MainContext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainContext.swift; sourceTree = "<group>"; };
+		9EA067A722BE0C28006326D1 /* SessionFlow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionFlow.swift; sourceTree = "<group>"; };
+		9EA067A922BE0C9B006326D1 /* SessionContext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionContext.swift; sourceTree = "<group>"; };
 		9EA067AB22BE0E60006326D1 /* PersistenceInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersistenceInteractor.swift; sourceTree = "<group>"; };
+		9EA067B622BE1A06006326D1 /* OnboardingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingViewController.swift; sourceTree = "<group>"; };
+		9EA067B822BE1A44006326D1 /* OnboardingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingView.swift; sourceTree = "<group>"; };
+		9EA067BA22BE1AA0006326D1 /* OnboardingViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingViewCell.swift; sourceTree = "<group>"; };
+		9EA067BC22BE1B1A006326D1 /* OnboardData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardData.swift; sourceTree = "<group>"; };
+		9EA067BE22BE29EE006326D1 /* InitialImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InitialImageView.swift; sourceTree = "<group>"; };
+		9EA067C022BE7E56006326D1 /* UIColorExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColorExtensions.swift; sourceTree = "<group>"; };
+		9EA067C222BE82B3006326D1 /* OnboardingDataCollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingDataCollectionView.swift; sourceTree = "<group>"; };
+		9EA067C622BE8BDF006326D1 /* OnboardingContext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingContext.swift; sourceTree = "<group>"; };
+		9EA067C822BF4EE7006326D1 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
+		9EA067CA22BFCF2B006326D1 /* IdentifiableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IdentifiableCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,7 +121,7 @@
 			children = (
 				9EA067B122BE152D006326D1 /* App */,
 				9EA067AD22BE14D9006326D1 /* Auth */,
-				9EA067AE22BE14EF006326D1 /* MainApp */,
+				9EA067AE22BE14EF006326D1 /* Session */,
 				9EA067B322BE159E006326D1 /* Onboarding */,
 			);
 			path = "iOS Dev Questions";
@@ -121,17 +141,18 @@
 			children = (
 				9EA067A122BE02EB006326D1 /* AuthFlow.swift */,
 				9EA067A522BE0622006326D1 /* AuthContext.swift */,
+				9EA067C822BF4EE7006326D1 /* SignUpViewController.swift */,
 			);
 			path = Auth;
 			sourceTree = "<group>";
 		};
-		9EA067AE22BE14EF006326D1 /* MainApp */ = {
+		9EA067AE22BE14EF006326D1 /* Session */ = {
 			isa = PBXGroup;
 			children = (
-				9EA067A722BE0C28006326D1 /* MainFlow.swift */,
-				9EA067A922BE0C9B006326D1 /* MainContext.swift */,
+				9EA067A722BE0C28006326D1 /* SessionFlow.swift */,
+				9EA067A922BE0C9B006326D1 /* SessionContext.swift */,
 			);
-			name = MainApp;
+			name = Session;
 			sourceTree = "<group>";
 		};
 		9EA067B122BE152D006326D1 /* App */ = {
@@ -150,6 +171,9 @@
 				9EA067A322BE05AD006326D1 /* User.swift */,
 				9EA0679922BDFC1D006326D1 /* GlobalTypealiases.swift */,
 				9EA067B222BE1553006326D1 /* Resources */,
+				9EA067BE22BE29EE006326D1 /* InitialImageView.swift */,
+				9EA067C022BE7E56006326D1 /* UIColorExtensions.swift */,
+				9EA067CA22BFCF2B006326D1 /* IdentifiableCell.swift */,
 			);
 			path = App;
 			sourceTree = "<group>";
@@ -165,6 +189,12 @@
 			isa = PBXGroup;
 			children = (
 				9EA0679D22BDFD81006326D1 /* OnboardingFlow.swift */,
+				9EA067C622BE8BDF006326D1 /* OnboardingContext.swift */,
+				9EA067B622BE1A06006326D1 /* OnboardingViewController.swift */,
+				9EA067B822BE1A44006326D1 /* OnboardingView.swift */,
+				9EA067BA22BE1AA0006326D1 /* OnboardingViewCell.swift */,
+				9EA067BC22BE1B1A006326D1 /* OnboardData.swift */,
+				9EA067C222BE82B3006326D1 /* OnboardingDataCollectionView.swift */,
 			);
 			path = Onboarding;
 			sourceTree = "<group>";
@@ -270,19 +300,29 @@
 			buildActionMask = 2147483647;
 			files = (
 				9EA0679C22BDFC52006326D1 /* AppFlow.swift in Sources */,
+				9EA067CB22BFCF2B006326D1 /* IdentifiableCell.swift in Sources */,
 				9EA0679E22BDFD81006326D1 /* OnboardingFlow.swift in Sources */,
 				9EA067A022BE0140006326D1 /* InitialViewController.swift in Sources */,
 				9EA0679622BDF536006326D1 /* AppContext.swift in Sources */,
 				9EA0677322BDF0AF006326D1 /* AppDelegate.swift in Sources */,
 				9EA0679A22BDFC1D006326D1 /* GlobalTypealiases.swift in Sources */,
+				9EA067C922BF4EE7006326D1 /* SignUpViewController.swift in Sources */,
 				9EA0679822BDF94A006326D1 /* UserSettings.swift in Sources */,
-				9EA067AA22BE0C9B006326D1 /* MainContext.swift in Sources */,
+				9EA067B722BE1A06006326D1 /* OnboardingViewController.swift in Sources */,
+				9EA067AA22BE0C9B006326D1 /* SessionContext.swift in Sources */,
+				9EA067C722BE8BDF006326D1 /* OnboardingContext.swift in Sources */,
+				9EA067BB22BE1AA0006326D1 /* OnboardingViewCell.swift in Sources */,
+				9EA067C322BE82B3006326D1 /* OnboardingDataCollectionView.swift in Sources */,
 				9EA0677B22BDF0AF006326D1 /* iOS_Dev_Questions.xcdatamodeld in Sources */,
+				9EA067BD22BE1B1A006326D1 /* OnboardData.swift in Sources */,
 				9EA067AC22BE0E60006326D1 /* PersistenceInteractor.swift in Sources */,
-				9EA067A822BE0C28006326D1 /* MainFlow.swift in Sources */,
+				9EA067A822BE0C28006326D1 /* SessionFlow.swift in Sources */,
 				9EA067A222BE02EB006326D1 /* AuthFlow.swift in Sources */,
+				9EA067B922BE1A44006326D1 /* OnboardingView.swift in Sources */,
 				9EA067A422BE05AD006326D1 /* User.swift in Sources */,
 				9EA067A622BE0622006326D1 /* AuthContext.swift in Sources */,
+				9EA067BF22BE29EE006326D1 /* InitialImageView.swift in Sources */,
+				9EA067C122BE7E56006326D1 /* UIColorExtensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -439,6 +479,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 5K99777NES;
 				INFOPLIST_FILE = "$(SRCROOT)/iOS Dev Questions/App/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -457,6 +498,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 5K99777NES;
 				INFOPLIST_FILE = "$(SRCROOT)/iOS Dev Questions/App/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

@@ -14,7 +14,7 @@ final class AppFlow {
     // MARK: - Possible Flows
     private lazy var onboardingFlow = OnboardingFlow(userSettings: context.userSettings)
     private lazy var authFlow = AuthFlow(userSettings: context.userSettings)
-    private lazy var mainFlow = MainFlow(userSettings: context.userSettings)
+    private lazy var sessionFlow = SessionFlow(userSettings: context.userSettings)
     
     // MARK: - Injected Instance Variables
     private let context: AppContext
@@ -49,7 +49,7 @@ final class AppFlow {
         switch context.state {
         case .onboarding: startOnboardingFlow()
         case .auth: startAuthFlow()
-        case .main: startMainFlow()
+        case .main: startSessionFlow()
         }
         
         return true
@@ -66,12 +66,12 @@ final class AppFlow {
     /// Responsible for configuring the auth flow and handling flow after it has finished
     private func startAuthFlow() {
         authFlow.start(with: rootViewController)
-        authFlow.signIn = { [weak self] in self?.startMainFlow() }
+        authFlow.signIn = { [weak self] in self?.startSessionFlow() }
     }
     
     /// Responsible for configuring the main flow and navigating after logging out
-    private func startMainFlow() {
-        mainFlow.start(with: rootViewController)
-        mainFlow.logout = { [weak self] in self?.startAuthFlow() }
+    private func startSessionFlow() {
+        sessionFlow.start(with: rootViewController)
+        sessionFlow.logout = { [weak self] in self?.startAuthFlow() }
     }
 }
