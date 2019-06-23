@@ -8,9 +8,17 @@
 
 import UIKit
 
+/// The entire view presented to the user during the onboarding process. This includes
+/// the slides (OnboardingViewCells), Skip/Done button, and the paging indicator.
 final class OnboardingView: UIView {
     
+    // MARK: - Communication
+    
+    /// Called when the user taps the Skip/Done button
     var didTapSkipButton: (() -> Void)?
+    
+    
+    // MARK: - Visual Elements
     
     lazy var collectionView: OnboardingDataCollectionView = {
         let collectionView = OnboardingDataCollectionView()
@@ -20,11 +28,12 @@ final class OnboardingView: UIView {
     
     lazy var skipButton: UIButton = { [unowned self] in
         let button = UIButton()
-        button.accessibilityLabel = "Skip"
         button.translatesAutoresizingMaskIntoConstraints = false
         button.setTitle("Skip", for: .normal)
         button.addTarget(self, action: #selector(_didTapSkipButton), for: .touchUpInside)
         button.setTitleColor(.hotPink, for: .normal)
+        button.titleLabel?.font = .preferredFont(forTextStyle: .body)
+        button.titleLabel?.adjustsFontForContentSizeCategory = true
         return button
     }()
     
@@ -36,6 +45,9 @@ final class OnboardingView: UIView {
         return pageControl
     }()
     
+    
+    // MARK: - Initializers
+    
     override init(frame: CGRect) {
         super.init(frame: frame)
         setupView()
@@ -44,6 +56,9 @@ final class OnboardingView: UIView {
     required init?(coder aDecoder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
+    
+    
+    // MARK: - Visual Element Setup
     
     private func setupView() {
         backgroundColor = .white
@@ -61,15 +76,20 @@ final class OnboardingView: UIView {
             
             skipButton.topAnchor.constraint(equalTo: guide.topAnchor),
             skipButton.trailingAnchor.constraint(equalTo: guide.trailingAnchor),
+            skipButton.widthAnchor.constraint(greaterThanOrEqualToConstant: 44),
+            skipButton.heightAnchor.constraint(greaterThanOrEqualToConstant: 44),
             
             pageControl.leadingAnchor.constraint(equalTo: leadingAnchor, constant: 0),
             pageControl.trailingAnchor.constraint(equalTo: trailingAnchor, constant: 0),
             pageControl.bottomAnchor.constraint(equalTo: guide.bottomAnchor, constant: -50),
             pageControl.heightAnchor.constraint(equalToConstant: 50)
-            
             ])
     }
     
+    
+    // MARK: - Events
+    
+    /// Handles when the user has tapped Skip/Done
     @objc
     private func _didTapSkipButton() {
         didTapSkipButton?()

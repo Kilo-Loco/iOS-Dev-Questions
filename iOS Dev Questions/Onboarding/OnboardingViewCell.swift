@@ -8,6 +8,8 @@
 
 import UIKit
 
+/// The slide (cell) responsible for presenting onboarding information to
+/// the user.
 final class OnboardingViewCell: UICollectionViewCell {
     
     // MARK: - Visual Elements
@@ -18,6 +20,7 @@ final class OnboardingViewCell: UICollectionViewCell {
         label.textAlignment = .center
         label.font = .preferredFont(forTextStyle: .title1)
         label.adjustsFontForContentSizeCategory = true
+        label.numberOfLines = 0
         return label
     }()
     

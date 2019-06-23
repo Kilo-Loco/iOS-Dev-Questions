@@ -12,6 +12,7 @@ import UIKit
 final class OnboardingDataCollectionView: UICollectionView {
     
     // MARK: - Initializers
+    
     init() {
         let flowLayout = UICollectionViewFlowLayout()
         flowLayout.scrollDirection = .horizontal
@@ -26,7 +27,9 @@ final class OnboardingDataCollectionView: UICollectionView {
         fatalError("init(coder:) has not been implemented")
     }
     
+    
     // MARK: - Configurations to the collection view itself
+    
     private func setup() {
         translatesAutoresizingMaskIntoConstraints = false
         isPagingEnabled = true
@@ -34,5 +37,4 @@ final class OnboardingDataCollectionView: UICollectionView {
         backgroundColor = .clear
         register(OnboardingViewCell.self, forCellWithReuseIdentifier: OnboardingViewCell.identifier)
     }
-    
 }
