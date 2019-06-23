@@ -39,7 +39,10 @@ final class OnboardingFlow {
     ///                                 from launch
     func start(with rootViewController: UIViewController) {
         let onboardingVC = OnboardingViewController(onboardingItems: context.onboardingItems)
-        onboardingVC.didFinishOnboarding = { [weak self] in self?.finishOnboarding() }
+        onboardingVC.didFinishOnboarding = { [weak self, onboardingVC] in
+            onboardingVC.dismiss(animated: true)
+            self?.finishOnboarding()
+        }
         rootViewController.present(onboardingVC, animated: true)
     }
     

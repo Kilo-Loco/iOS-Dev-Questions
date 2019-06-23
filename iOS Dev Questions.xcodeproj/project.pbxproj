@@ -34,6 +34,15 @@
 		9EA067C722BE8BDF006326D1 /* OnboardingContext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EA067C622BE8BDF006326D1 /* OnboardingContext.swift */; };
 		9EA067C922BF4EE7006326D1 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EA067C822BF4EE7006326D1 /* SignUpViewController.swift */; };
 		9EA067CB22BFCF2B006326D1 /* IdentifiableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EA067CA22BFCF2B006326D1 /* IdentifiableCell.swift */; };
+		9EA067CD22BFEFF8006326D1 /* LogoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EA067CC22BFEFF8006326D1 /* LogoCell.swift */; };
+		9EA067CF22BFFC93006326D1 /* InputFieldCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EA067CE22BFFC93006326D1 /* InputFieldCell.swift */; };
+		9EA067D122BFFDAC006326D1 /* GradientLayerExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EA067D022BFFDAC006326D1 /* GradientLayerExtensions.swift */; };
+		9EA067D322C003CE006326D1 /* EmailInputFieldCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EA067D222C003CE006326D1 /* EmailInputFieldCell.swift */; };
+		9EA067D522C006F2006326D1 /* GradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EA067D422C006F2006326D1 /* GradientView.swift */; };
+		9EA067D722C00935006326D1 /* PasswordInputFieldCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EA067D622C00935006326D1 /* PasswordInputFieldCell.swift */; };
+		9EA067D922C0113F006326D1 /* FullNameInputFieldCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EA067D822C0113F006326D1 /* FullNameInputFieldCell.swift */; };
+		9EA067DB22C01658006326D1 /* PillButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EA067DA22C01658006326D1 /* PillButton.swift */; };
+		9EA067DD22C01A22006326D1 /* PillButtonCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EA067DC22C01A22006326D1 /* PillButtonCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -78,6 +87,15 @@
 		9EA067C622BE8BDF006326D1 /* OnboardingContext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingContext.swift; sourceTree = "<group>"; };
 		9EA067C822BF4EE7006326D1 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		9EA067CA22BFCF2B006326D1 /* IdentifiableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IdentifiableCell.swift; sourceTree = "<group>"; };
+		9EA067CC22BFEFF8006326D1 /* LogoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogoCell.swift; sourceTree = "<group>"; };
+		9EA067CE22BFFC93006326D1 /* InputFieldCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputFieldCell.swift; sourceTree = "<group>"; };
+		9EA067D022BFFDAC006326D1 /* GradientLayerExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientLayerExtensions.swift; sourceTree = "<group>"; };
+		9EA067D222C003CE006326D1 /* EmailInputFieldCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmailInputFieldCell.swift; sourceTree = "<group>"; };
+		9EA067D422C006F2006326D1 /* GradientView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientView.swift; sourceTree = "<group>"; };
+		9EA067D622C00935006326D1 /* PasswordInputFieldCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordInputFieldCell.swift; sourceTree = "<group>"; };
+		9EA067D822C0113F006326D1 /* FullNameInputFieldCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FullNameInputFieldCell.swift; sourceTree = "<group>"; };
+		9EA067DA22C01658006326D1 /* PillButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PillButton.swift; sourceTree = "<group>"; };
+		9EA067DC22C01A22006326D1 /* PillButtonCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PillButtonCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -142,6 +160,10 @@
 				9EA067A122BE02EB006326D1 /* AuthFlow.swift */,
 				9EA067A522BE0622006326D1 /* AuthContext.swift */,
 				9EA067C822BF4EE7006326D1 /* SignUpViewController.swift */,
+				9EA067CC22BFEFF8006326D1 /* LogoCell.swift */,
+				9EA067D222C003CE006326D1 /* EmailInputFieldCell.swift */,
+				9EA067D622C00935006326D1 /* PasswordInputFieldCell.swift */,
+				9EA067D822C0113F006326D1 /* FullNameInputFieldCell.swift */,
 			);
 			path = Auth;
 			sourceTree = "<group>";
@@ -159,6 +181,7 @@
 			isa = PBXGroup;
 			children = (
 				9EA0677C22BDF0B1006326D1 /* Assets.xcassets */,
+				9EA067B222BE1553006326D1 /* Resources */,
 				9EA0677E22BDF0B1006326D1 /* LaunchScreen.storyboard */,
 				9EA0677222BDF0AF006326D1 /* AppDelegate.swift */,
 				9EA0678122BDF0B1006326D1 /* Info.plist */,
@@ -170,10 +193,14 @@
 				9EA067AB22BE0E60006326D1 /* PersistenceInteractor.swift */,
 				9EA067A322BE05AD006326D1 /* User.swift */,
 				9EA0679922BDFC1D006326D1 /* GlobalTypealiases.swift */,
-				9EA067B222BE1553006326D1 /* Resources */,
 				9EA067BE22BE29EE006326D1 /* InitialImageView.swift */,
 				9EA067C022BE7E56006326D1 /* UIColorExtensions.swift */,
 				9EA067CA22BFCF2B006326D1 /* IdentifiableCell.swift */,
+				9EA067CE22BFFC93006326D1 /* InputFieldCell.swift */,
+				9EA067D022BFFDAC006326D1 /* GradientLayerExtensions.swift */,
+				9EA067D422C006F2006326D1 /* GradientView.swift */,
+				9EA067DA22C01658006326D1 /* PillButton.swift */,
+				9EA067DC22C01A22006326D1 /* PillButtonCell.swift */,
 			);
 			path = App;
 			sourceTree = "<group>";
@@ -299,28 +326,37 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9EA067D722C00935006326D1 /* PasswordInputFieldCell.swift in Sources */,
 				9EA0679C22BDFC52006326D1 /* AppFlow.swift in Sources */,
 				9EA067CB22BFCF2B006326D1 /* IdentifiableCell.swift in Sources */,
 				9EA0679E22BDFD81006326D1 /* OnboardingFlow.swift in Sources */,
+				9EA067D322C003CE006326D1 /* EmailInputFieldCell.swift in Sources */,
 				9EA067A022BE0140006326D1 /* InitialViewController.swift in Sources */,
 				9EA0679622BDF536006326D1 /* AppContext.swift in Sources */,
 				9EA0677322BDF0AF006326D1 /* AppDelegate.swift in Sources */,
+				9EA067CD22BFEFF8006326D1 /* LogoCell.swift in Sources */,
 				9EA0679A22BDFC1D006326D1 /* GlobalTypealiases.swift in Sources */,
 				9EA067C922BF4EE7006326D1 /* SignUpViewController.swift in Sources */,
+				9EA067D122BFFDAC006326D1 /* GradientLayerExtensions.swift in Sources */,
 				9EA0679822BDF94A006326D1 /* UserSettings.swift in Sources */,
+				9EA067DD22C01A22006326D1 /* PillButtonCell.swift in Sources */,
+				9EA067D922C0113F006326D1 /* FullNameInputFieldCell.swift in Sources */,
 				9EA067B722BE1A06006326D1 /* OnboardingViewController.swift in Sources */,
 				9EA067AA22BE0C9B006326D1 /* SessionContext.swift in Sources */,
 				9EA067C722BE8BDF006326D1 /* OnboardingContext.swift in Sources */,
 				9EA067BB22BE1AA0006326D1 /* OnboardingViewCell.swift in Sources */,
 				9EA067C322BE82B3006326D1 /* OnboardingDataCollectionView.swift in Sources */,
+				9EA067CF22BFFC93006326D1 /* InputFieldCell.swift in Sources */,
 				9EA0677B22BDF0AF006326D1 /* iOS_Dev_Questions.xcdatamodeld in Sources */,
 				9EA067BD22BE1B1A006326D1 /* OnboardData.swift in Sources */,
 				9EA067AC22BE0E60006326D1 /* PersistenceInteractor.swift in Sources */,
 				9EA067A822BE0C28006326D1 /* SessionFlow.swift in Sources */,
+				9EA067DB22C01658006326D1 /* PillButton.swift in Sources */,
 				9EA067A222BE02EB006326D1 /* AuthFlow.swift in Sources */,
 				9EA067B922BE1A44006326D1 /* OnboardingView.swift in Sources */,
 				9EA067A422BE05AD006326D1 /* User.swift in Sources */,
 				9EA067A622BE0622006326D1 /* AuthContext.swift in Sources */,
+				9EA067D522C006F2006326D1 /* GradientView.swift in Sources */,
 				9EA067BF22BE29EE006326D1 /* InitialImageView.swift in Sources */,
 				9EA067C122BE7E56006326D1 /* UIColorExtensions.swift in Sources */,
 			);

@@ -60,12 +60,15 @@ final class AppFlow {
     /// Responsible for configuring the onboarding flow and handling flow after it has finished
     private func startOnboardingFlow() {
         onboardingFlow.start(with: rootViewController)
-        onboardingFlow.didFinish = { [weak self] in self?.startAuthFlow() }
+        onboardingFlow.didFinish = { [weak self] in
+            
+            self?.startAuthFlow()
+        }
     }
     
     /// Responsible for configuring the auth flow and handling flow after it has finished
     private func startAuthFlow() {
-        authFlow.start(with: rootViewController)
+        authFlow.startSignUp(with: rootViewController)
         authFlow.signIn = { [weak self] in self?.startSessionFlow() }
     }
     

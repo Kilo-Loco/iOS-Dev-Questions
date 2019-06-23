@@ -10,6 +10,6 @@ import UIKit
 
 extension UIColor {
     
-    static let hotPink = UIColor(named: "hotPink")
-    static let mango = UIColor(named: "mango")
+    static let hotPink = UIColor(named: "hotPink")!
+    static let mango = UIColor(named: "mango")!
 }
