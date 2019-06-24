@@ -24,6 +24,6 @@ final class QuestionsContext  {
     // MARK: - Interactors
     
     func getQuestions(completion: @escaping (Result<[Topic], Error>) -> Void) {
-        
+        database.getTopics(completion: completion)
     }
 }

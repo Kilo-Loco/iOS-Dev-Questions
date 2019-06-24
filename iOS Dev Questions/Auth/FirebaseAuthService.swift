@@ -11,7 +11,11 @@ import FirebaseAuth
 
 final class FirebaseAuthService {
     
-    private let auth = Auth.auth()
+    private let auth: Auth
+    
+    init(auth: Auth = .auth()) {
+        self.auth = auth
+    }
     
     func login(with credentials: LoginCredentials, completion: @escaping (Result<User, Error>) -> Void) {
         auth.signIn(withEmail: credentials.email.value,

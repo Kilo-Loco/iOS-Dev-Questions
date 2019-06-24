@@ -19,7 +19,9 @@ final class QuestionsViewController: UITableViewController {
     // MARK: - Injected Properties
     
     let mainTableView: QuestionsView
-    var topics: [Topic]
+    var topics: [Topic] {
+        didSet { mainTableView.reloadData() }
+    }
     
     
     // MARK: - Initializers

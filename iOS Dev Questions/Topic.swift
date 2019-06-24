@@ -11,4 +11,17 @@ import Foundation
 struct Topic {
     let title: String
     let questions: [Question]
+    
+    init?(data: [String: Any]) {
+        guard
+            let title = data["title"] as? String,
+            let questionsArray = data["questions"] as? [[String: Any]]
+            else { return nil }
+        
+        let questions = questionsArray.compactMap { Question(data: $0) }
+        
+        self.title = title
+        self.questions = questions
+    }
+    
 }

@@ -16,17 +16,33 @@ final class SessionFlow {
     
     private let context: QuestionsContext
     private let userSettings: UserSettings
+    private let alertService: AlertService
     
-    init(context: QuestionsContext = .init(), userSettings: UserSettings) {
-        self.context = context
+    init(context: QuestionsContext = .init(), userSettings: UserSettings, alertService: AlertService = .init()) {
+        self.context      = context
         self.userSettings = userSettings
+        self.alertService = alertService
     }
     
     func start(with rootViewController: UIViewController) {
-        let question = Question(value: "What's the difference between bounds and frame?", answer: "The frame is the actual location of the object in the parent view. The bounds are where the contents location inside of the view in question.", creationDate: Date())
-        let topic = Topic(title: "test", questions: [question])
-        let questionsVC = QuestionsViewController(topics: [topic])
+        let questionsVC = QuestionsViewController()
         questionsVC.title = "Questions"
+        
+        questionsVC.getTopics = { [weak self, questionsVC] in
+            
+            self?.context.getQuestions(completion: { (result) in
+                switch result {
+                case .success(let topics):
+                    questionsVC.topics = topics
+                    
+                case .failure(let error):
+                    guard let alert = self?.alertService.generateAlert(for: error) else { return }
+                    questionsVC.present(alert, animated: true)
+                }
+            })
+        }
+        
+        
         let navigationVC = SessionNavigationController(rootViewController: questionsVC)
         rootViewController.present(navigationVC, animated: true)
     }

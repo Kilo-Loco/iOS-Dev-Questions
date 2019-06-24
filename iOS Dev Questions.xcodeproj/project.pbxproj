@@ -67,6 +67,7 @@
 		9EA0684B22C083FF006326D1 /* QuestionDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EA0684A22C083FF006326D1 /* QuestionDetailsView.swift */; };
 		9EA0684D22C08FE4006326D1 /* TopicHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EA0684C22C08FE4006326D1 /* TopicHeaderView.swift */; };
 		9EA0684F22C098E6006326D1 /* SessionNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EA0684E22C098E6006326D1 /* SessionNavigationController.swift */; };
+		9EA0685122C09E16006326D1 /* SuggestedQuestion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EA0685022C09E16006326D1 /* SuggestedQuestion.swift */; };
 		9FE301ADC631501747BD3113 /* Pods_iOS_Dev_QuestionsTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E97AF6DBE90134B49DAFAFA1 /* Pods_iOS_Dev_QuestionsTests.framework */; };
 		E88AC639D1E5EC6612DF5146 /* Pods_iOS_Dev_Questions.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8EDE94D1873241EB9B6F501B /* Pods_iOS_Dev_Questions.framework */; };
 /* End PBXBuildFile section */
@@ -150,6 +151,7 @@
 		9EA0684A22C083FF006326D1 /* QuestionDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionDetailsView.swift; sourceTree = "<group>"; };
 		9EA0684C22C08FE4006326D1 /* TopicHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopicHeaderView.swift; sourceTree = "<group>"; };
 		9EA0684E22C098E6006326D1 /* SessionNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionNavigationController.swift; sourceTree = "<group>"; };
+		9EA0685022C09E16006326D1 /* SuggestedQuestion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuggestedQuestion.swift; sourceTree = "<group>"; };
 		CAAF496EFBCE07B36FC6D893 /* Pods-iOS Dev QuestionsTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOS Dev QuestionsTests.release.xcconfig"; path = "Target Support Files/Pods-iOS Dev QuestionsTests/Pods-iOS Dev QuestionsTests.release.xcconfig"; sourceTree = "<group>"; };
 		E97AF6DBE90134B49DAFAFA1 /* Pods_iOS_Dev_QuestionsTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_iOS_Dev_QuestionsTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -262,6 +264,7 @@
 				9EA0684A22C083FF006326D1 /* QuestionDetailsView.swift */,
 				9EA0684C22C08FE4006326D1 /* TopicHeaderView.swift */,
 				9EA0684E22C098E6006326D1 /* SessionNavigationController.swift */,
+				9EA0685022C09E16006326D1 /* SuggestedQuestion.swift */,
 			);
 			name = Session;
 			sourceTree = "<group>";
@@ -551,6 +554,7 @@
 				9EA067A622BE0622006326D1 /* AuthContext.swift in Sources */,
 				9EA0684D22C08FE4006326D1 /* TopicHeaderView.swift in Sources */,
 				9EA067D522C006F2006326D1 /* GradientView.swift in Sources */,
+				9EA0685122C09E16006326D1 /* SuggestedQuestion.swift in Sources */,
 				9EA067BF22BE29EE006326D1 /* InitialImageView.swift in Sources */,
 				9EA067C122BE7E56006326D1 /* UIColorExtensions.swift in Sources */,
 				9EA0684122C07FAB006326D1 /* QuestionCell.swift in Sources */,
