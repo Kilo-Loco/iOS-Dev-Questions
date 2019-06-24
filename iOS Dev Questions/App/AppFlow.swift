@@ -52,7 +52,7 @@ final class AppFlow {
     private func didStartSubFlow() -> Bool {
         switch context.state {
         case .onboarding: startOnboardingFlow()
-        case .auth: startAuthFlow()
+        case .auth(let userShouldLogin): startAuthFlow(userShouldLogin: userShouldLogin)
         case .session: break
 //            startSessionFlow()
         }
@@ -67,19 +67,23 @@ final class AppFlow {
         onboardingFlow.start(with: rootViewController)
         onboardingFlow.didFinish = { [weak self] in
             
-            self?.startAuthFlow()
+            self?.startAuthFlow(userShouldLogin: false)
         }
     }
     
     /// Responsible for configuring the auth flow and handling flow after it has finished
-    private func startAuthFlow() {
-        authFlow.startSignUp(with: rootViewController)
-//        authFlow.startLogin(with: rootViewController)
+    private func startAuthFlow(userShouldLogin: Bool = true) {
+        if userShouldLogin {
+            authFlow.startLogin(with: rootViewController)
+        } else {
+            authFlow.startSignUp(with: rootViewController)
+        }
         authFlow.signIn = { [weak self] in self?.startSessionFlow(with: $0) }
     }
     
     /// Responsible for configuring the main flow and navigating after logging out
     private func startSessionFlow(with user: User) {
+        print(user)
         sessionFlow.start(with: rootViewController)
         sessionFlow.logout = { [weak self] in self?.startAuthFlow() }
     }

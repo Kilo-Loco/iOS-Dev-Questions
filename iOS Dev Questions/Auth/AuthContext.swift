@@ -10,8 +10,6 @@ import Foundation
 
 final class AuthContext {
     
-    var signIn: ((User) -> Void)?
-    
     private let auth: FirebaseAuthService
     
     init(auth: FirebaseAuthService = .init()) {
@@ -33,6 +31,25 @@ final class AuthContext {
                                                       password: validPassword)
             
             auth.signUp(with: signUpCredentials, completion: completion)
+            
+        } catch {
+            print(error)
+            completion(.failure(error))
+        }
+    }
+    
+    func login(with email: String,
+               _ password: String,
+               completion: @escaping (Result<User, Error>) -> Void) {
+        
+        do {
+            let validEmail    = try Email(value: email)
+            let validPassword = try Password(value: password)
+            
+            let loginCredentials = LoginCredentials(email: validEmail,
+                                                    password: validPassword)
+            
+            auth.login(with: loginCredentials, completion: completion)
             
         } catch {
             print(error)

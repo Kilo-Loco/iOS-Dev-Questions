@@ -46,7 +46,7 @@ final class AppContext: NSObject {
                 
             } else {
                 // User is not signed in
-                return .auth
+                return .auth(userShouldLogin: true)
             }
             
         } else {
@@ -81,7 +81,7 @@ extension AppContext {
         case onboarding
         
         // User needs to sign in. They already have gone through onboarding
-        case auth
+        case auth(userShouldLogin: Bool)
         
         // User has successfully signed in and can use the main app
         case session

@@ -40,9 +40,10 @@ final class AuthFlow {
     func startSignUp(with rootViewController: UIViewController) {
         let signUpVC = SignUpViewController()
         
+        // Handle when the user is attempting to sign up
         signUpVC.didProvideSignUpCredentials = { [weak self, signUpVC] in
             
-            self?.context.signUp(with: $0, $1, $2, completion: { (result) in
+            self?.context.signUp(with: $0, $1, $2) { (result) in
                 
                 switch result {
                 case .success(let user):
@@ -52,9 +53,10 @@ final class AuthFlow {
                     guard let alert = self?.alertService.generateAlert(for: error) else { return }
                     signUpVC.present(alert, animated: true)
                 }
-            })
+            }
         }
         
+        // User already has an account and wants to login
         signUpVC.showLoginScreen = { [weak self, signUpVC] in
             if signUpVC.presentingViewController?.isKind(of: LoginViewController.self) == true {
                 signUpVC.dismiss(animated: true)
@@ -70,10 +72,24 @@ final class AuthFlow {
     /// - Parameter rootViewController: The presenting view controller.
     func startLogin(with rootViewController: UIViewController) {
         let loginVC = LoginViewController()
-        loginVC.didProvideLoginCredentials = {
-            print($1)
+        
+        // Handle when the user is attempting to login
+        loginVC.didProvideLoginCredentials = { [weak self, loginVC] in
+            
+            self?.context.login(with: $0, $1) { (result) in
+                
+                switch result {
+                case .success(let user):
+                    self?.signIn?(user)
+                    
+                case .failure(let error):
+                    guard let alert = self?.alertService.generateAlert(for: error) else { return }
+                    loginVC.present(alert, animated: true)
+                }
+            }
         }
         
+        // User doesn't have an account and needs to sign up
         loginVC.showSignUpScreen = { [weak self, loginVC] in
             if loginVC.presentingViewController?.isKind(of: SignUpViewController.self) == true {
                 loginVC.dismiss(animated: true)
