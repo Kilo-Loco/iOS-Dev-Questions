@@ -56,6 +56,17 @@
 		9EA067F522C0650A006326D1 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EA067F422C0650A006326D1 /* LoginViewController.swift */; };
 		9EA067F722C06533006326D1 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EA067F622C06533006326D1 /* LoginView.swift */; };
 		9EA067F922C06FB2006326D1 /* LoginCredentials.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EA067F822C06FB2006326D1 /* LoginCredentials.swift */; };
+		9EA0683922C079DA006326D1 /* QuestionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EA0683822C079DA006326D1 /* QuestionsViewController.swift */; };
+		9EA0683B22C07F03006326D1 /* QuestionsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EA0683A22C07F03006326D1 /* QuestionsView.swift */; };
+		9EA0683D22C07F2D006326D1 /* QuestionsContext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EA0683C22C07F2D006326D1 /* QuestionsContext.swift */; };
+		9EA0683F22C07F65006326D1 /* FirebaseDatabaseService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EA0683E22C07F65006326D1 /* FirebaseDatabaseService.swift */; };
+		9EA0684122C07FAB006326D1 /* QuestionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EA0684022C07FAB006326D1 /* QuestionCell.swift */; };
+		9EA0684322C07FF1006326D1 /* Question.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EA0684222C07FF1006326D1 /* Question.swift */; };
+		9EA0684722C080A9006326D1 /* Topic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EA0684622C080A9006326D1 /* Topic.swift */; };
+		9EA0684922C083F1006326D1 /* QuestionDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EA0684822C083F1006326D1 /* QuestionDetailsViewController.swift */; };
+		9EA0684B22C083FF006326D1 /* QuestionDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EA0684A22C083FF006326D1 /* QuestionDetailsView.swift */; };
+		9EA0684D22C08FE4006326D1 /* TopicHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EA0684C22C08FE4006326D1 /* TopicHeaderView.swift */; };
+		9EA0684F22C098E6006326D1 /* SessionNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EA0684E22C098E6006326D1 /* SessionNavigationController.swift */; };
 		9FE301ADC631501747BD3113 /* Pods_iOS_Dev_QuestionsTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E97AF6DBE90134B49DAFAFA1 /* Pods_iOS_Dev_QuestionsTests.framework */; };
 		E88AC639D1E5EC6612DF5146 /* Pods_iOS_Dev_Questions.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8EDE94D1873241EB9B6F501B /* Pods_iOS_Dev_Questions.framework */; };
 /* End PBXBuildFile section */
@@ -128,6 +139,17 @@
 		9EA067F422C0650A006326D1 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		9EA067F622C06533006326D1 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		9EA067F822C06FB2006326D1 /* LoginCredentials.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginCredentials.swift; sourceTree = "<group>"; };
+		9EA0683822C079DA006326D1 /* QuestionsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionsViewController.swift; sourceTree = "<group>"; };
+		9EA0683A22C07F03006326D1 /* QuestionsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionsView.swift; sourceTree = "<group>"; };
+		9EA0683C22C07F2D006326D1 /* QuestionsContext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionsContext.swift; sourceTree = "<group>"; };
+		9EA0683E22C07F65006326D1 /* FirebaseDatabaseService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseDatabaseService.swift; sourceTree = "<group>"; };
+		9EA0684022C07FAB006326D1 /* QuestionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionCell.swift; sourceTree = "<group>"; };
+		9EA0684222C07FF1006326D1 /* Question.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Question.swift; sourceTree = "<group>"; };
+		9EA0684622C080A9006326D1 /* Topic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Topic.swift; sourceTree = "<group>"; };
+		9EA0684822C083F1006326D1 /* QuestionDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionDetailsViewController.swift; sourceTree = "<group>"; };
+		9EA0684A22C083FF006326D1 /* QuestionDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionDetailsView.swift; sourceTree = "<group>"; };
+		9EA0684C22C08FE4006326D1 /* TopicHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopicHeaderView.swift; sourceTree = "<group>"; };
+		9EA0684E22C098E6006326D1 /* SessionNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionNavigationController.swift; sourceTree = "<group>"; };
 		CAAF496EFBCE07B36FC6D893 /* Pods-iOS Dev QuestionsTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOS Dev QuestionsTests.release.xcconfig"; path = "Target Support Files/Pods-iOS Dev QuestionsTests/Pods-iOS Dev QuestionsTests.release.xcconfig"; sourceTree = "<group>"; };
 		E97AF6DBE90134B49DAFAFA1 /* Pods_iOS_Dev_QuestionsTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_iOS_Dev_QuestionsTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -229,6 +251,17 @@
 			children = (
 				9EA067A722BE0C28006326D1 /* SessionFlow.swift */,
 				9EA067A922BE0C9B006326D1 /* SessionContext.swift */,
+				9EA0683822C079DA006326D1 /* QuestionsViewController.swift */,
+				9EA0683A22C07F03006326D1 /* QuestionsView.swift */,
+				9EA0683C22C07F2D006326D1 /* QuestionsContext.swift */,
+				9EA0683E22C07F65006326D1 /* FirebaseDatabaseService.swift */,
+				9EA0684022C07FAB006326D1 /* QuestionCell.swift */,
+				9EA0684222C07FF1006326D1 /* Question.swift */,
+				9EA0684622C080A9006326D1 /* Topic.swift */,
+				9EA0684822C083F1006326D1 /* QuestionDetailsViewController.swift */,
+				9EA0684A22C083FF006326D1 /* QuestionDetailsView.swift */,
+				9EA0684C22C08FE4006326D1 /* TopicHeaderView.swift */,
+				9EA0684E22C098E6006326D1 /* SessionNavigationController.swift */,
 			);
 			name = Session;
 			sourceTree = "<group>";
@@ -468,6 +501,7 @@
 				9EA067D722C00935006326D1 /* PasswordInputFieldCell.swift in Sources */,
 				9EA0679C22BDFC52006326D1 /* AppFlow.swift in Sources */,
 				9EA067CB22BFCF2B006326D1 /* IdentifiableCell.swift in Sources */,
+				9EA0684322C07FF1006326D1 /* Question.swift in Sources */,
 				9EA067E922C04B72006326D1 /* Password.swift in Sources */,
 				9EA0679E22BDFD81006326D1 /* OnboardingFlow.swift in Sources */,
 				9EA067D322C003CE006326D1 /* EmailInputFieldCell.swift in Sources */,
@@ -476,12 +510,18 @@
 				9EA067A022BE0140006326D1 /* InitialViewController.swift in Sources */,
 				9EA0679622BDF536006326D1 /* AppContext.swift in Sources */,
 				9EA0677322BDF0AF006326D1 /* AppDelegate.swift in Sources */,
+				9EA0684F22C098E6006326D1 /* SessionNavigationController.swift in Sources */,
 				9EA067CD22BFEFF8006326D1 /* LogoCell.swift in Sources */,
+				9EA0683922C079DA006326D1 /* QuestionsViewController.swift in Sources */,
+				9EA0683F22C07F65006326D1 /* FirebaseDatabaseService.swift in Sources */,
 				9EA0679A22BDFC1D006326D1 /* GlobalTypealiases.swift in Sources */,
 				9EA067C922BF4EE7006326D1 /* SignUpViewController.swift in Sources */,
+				9EA0684B22C083FF006326D1 /* QuestionDetailsView.swift in Sources */,
 				9EA067D122BFFDAC006326D1 /* GradientLayerExtensions.swift in Sources */,
 				9EA0679822BDF94A006326D1 /* UserSettings.swift in Sources */,
+				9EA0683D22C07F2D006326D1 /* QuestionsContext.swift in Sources */,
 				9EA067F322C05F49006326D1 /* AlertService.swift in Sources */,
+				9EA0684722C080A9006326D1 /* Topic.swift in Sources */,
 				9EA067DD22C01A22006326D1 /* PillButtonCell.swift in Sources */,
 				9EA067D922C0113F006326D1 /* FullNameInputFieldCell.swift in Sources */,
 				9EA067E322C03E89006326D1 /* SignUpView.swift in Sources */,
@@ -491,6 +531,7 @@
 				9EA067EB22C04CA6006326D1 /* SignUpCredentials.swift in Sources */,
 				9EA067C722BE8BDF006326D1 /* OnboardingContext.swift in Sources */,
 				9EA067BB22BE1AA0006326D1 /* OnboardingViewCell.swift in Sources */,
+				9EA0683B22C07F03006326D1 /* QuestionsView.swift in Sources */,
 				9EA067C322BE82B3006326D1 /* OnboardingDataCollectionView.swift in Sources */,
 				9EA067CF22BFFC93006326D1 /* InputFieldCell.swift in Sources */,
 				9EA0677B22BDF0AF006326D1 /* iOS_Dev_Questions.xcdatamodeld in Sources */,
@@ -503,13 +544,16 @@
 				9EA067F522C0650A006326D1 /* LoginViewController.swift in Sources */,
 				9EA067F922C06FB2006326D1 /* LoginCredentials.swift in Sources */,
 				9EA067DB22C01658006326D1 /* PillButton.swift in Sources */,
+				9EA0684922C083F1006326D1 /* QuestionDetailsViewController.swift in Sources */,
 				9EA067A222BE02EB006326D1 /* AuthFlow.swift in Sources */,
 				9EA067B922BE1A44006326D1 /* OnboardingView.swift in Sources */,
 				9EA067A422BE05AD006326D1 /* User.swift in Sources */,
 				9EA067A622BE0622006326D1 /* AuthContext.swift in Sources */,
+				9EA0684D22C08FE4006326D1 /* TopicHeaderView.swift in Sources */,
 				9EA067D522C006F2006326D1 /* GradientView.swift in Sources */,
 				9EA067BF22BE29EE006326D1 /* InitialImageView.swift in Sources */,
 				9EA067C122BE7E56006326D1 /* UIColorExtensions.swift in Sources */,
+				9EA0684122C07FAB006326D1 /* QuestionCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

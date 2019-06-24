@@ -16,6 +16,9 @@ final class AuthContext {
         self.auth = auth
     }
     
+    
+    // MARK: - Interactors
+    
     func signUp(with fullName: String,
                 _ email: String,
                 _ password: String,

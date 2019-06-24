@@ -47,6 +47,7 @@ final class AuthFlow {
                 
                 switch result {
                 case .success(let user):
+                    signUpVC.dismiss(animated: true)
                     self?.signIn?(user)
                     
                 case .failure(let error):
@@ -80,6 +81,7 @@ final class AuthFlow {
                 
                 switch result {
                 case .success(let user):
+                    loginVC.dismiss(animated: true)
                     self?.signIn?(user)
                     
                 case .failure(let error):

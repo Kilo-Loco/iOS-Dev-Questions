@@ -14,15 +14,20 @@ final class SessionFlow {
     /// Called once the user has requested to logout and end their session
     var logout: EmptyClosure?
     
-    private let context: SessionContext
+    private let context: QuestionsContext
     private let userSettings: UserSettings
     
-    init(context: SessionContext = .init(), userSettings: UserSettings) {
+    init(context: QuestionsContext = .init(), userSettings: UserSettings) {
         self.context = context
         self.userSettings = userSettings
     }
     
-    func start(with viewController: UIViewController) {
-        
+    func start(with rootViewController: UIViewController) {
+        let question = Question(value: "What's the difference between bounds and frame?", answer: "The frame is the actual location of the object in the parent view. The bounds are where the contents location inside of the view in question.", creationDate: Date())
+        let topic = Topic(title: "test", questions: [question])
+        let questionsVC = QuestionsViewController(topics: [topic])
+        questionsVC.title = "Questions"
+        let navigationVC = SessionNavigationController(rootViewController: questionsVC)
+        rootViewController.present(navigationVC, animated: true)
     }
 }
