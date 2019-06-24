@@ -7,7 +7,10 @@
 //
 
 import Foundation
+import FirebaseFirestore
 
 final class FirebaseDatabaseService {
+    
+    private let database = Firestore.firestore()
     
 }

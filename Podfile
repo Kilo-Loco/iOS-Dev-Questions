@@ -9,6 +9,7 @@ target 'iOS Dev Questions' do
   pod 'Firebase/Core'
   pod 'Firebase/Analytics'
   pod 'Firebase/Auth'
+  pod 'Firebase/Firestore'
 
   target 'iOS Dev QuestionsTests' do
     inherit! :search_paths
