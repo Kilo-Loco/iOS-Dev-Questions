@@ -13,6 +13,7 @@ final class SessionNavigationController: UINavigationController {
     override func viewDidLoad() {
         super.viewDidLoad()
         navigationBar.prefersLargeTitles = true
+        navigationBar.tintColor = .hotPink
     }
     
 

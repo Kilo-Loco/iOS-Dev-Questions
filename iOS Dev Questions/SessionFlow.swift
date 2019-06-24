@@ -11,17 +11,28 @@ import UIKit
 /// Responsible for guiding the user through the app during a session
 final class SessionFlow {
     
+    // MARK: - Communication
+    
     /// Called once the user has requested to logout and end their session
     var logout: EmptyClosure?
     
+    
+    // MARK: - Injected Properties
+    
+    private let sessionNavigationController: SessionNavigationController
     private let context: QuestionsContext
     private let userSettings: UserSettings
     private let alertService: AlertService
     
-    init(context: QuestionsContext = .init(), userSettings: UserSettings, alertService: AlertService = .init()) {
-        self.context      = context
-        self.userSettings = userSettings
-        self.alertService = alertService
+    init(sessionNavigationController: SessionNavigationController = .init(),
+         context: QuestionsContext = .init(),
+         userSettings: UserSettings,
+         alertService: AlertService = .init()) {
+        
+        self.sessionNavigationController = sessionNavigationController
+        self.context                     = context
+        self.userSettings                = userSettings
+        self.alertService                = alertService
     }
     
     func start(with rootViewController: UIViewController) {
@@ -42,8 +53,20 @@ final class SessionFlow {
             })
         }
         
+        questionsVC.showSettings = { [weak self] in self?.showSettings() }
+        questionsVC.showQuestionDetails = { [weak self] in self?.showDetails(for: $0) }
         
-        let navigationVC = SessionNavigationController(rootViewController: questionsVC)
-        rootViewController.present(navigationVC, animated: true)
+        sessionNavigationController.pushViewController(questionsVC, animated: false)
+        
+        rootViewController.present(sessionNavigationController, animated: true)
+    }
+    
+    private func showDetails(for question: Question) {
+        let questionDetailsVC = QuestionDetailsViewController(question: question)
+        sessionNavigationController.pushViewController(questionDetailsVC, animated: true)
+    }
+    
+    private func showSettings() {
+        print("settings")
     }
 }

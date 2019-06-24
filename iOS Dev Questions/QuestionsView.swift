@@ -10,6 +10,19 @@ import UIKit
 
 final class QuestionsView: UITableView {
     
+    // MARK: - Communication
+    
+    var didTapSettings: EmptyClosure?
+    
+    
+    // MARK: - Subviews
+    
+    lazy var settingsBarItem = UIBarButtonItem(image: #imageLiteral(resourceName: "settingsIcon"),
+                                               style: .plain,
+                                               target: self,
+                                               action: #selector(didTapSettingsButton))
+    
+    
     // MARK: - Initializers
     
     init() {
@@ -27,5 +40,13 @@ final class QuestionsView: UITableView {
     private func setup() {
         separatorStyle = .none
         register(QuestionCell.self, forCellReuseIdentifier: QuestionCell.identifier)
+    }
+    
+    
+    // MARK: - Events
+    
+    @objc
+    private func didTapSettingsButton() {
+        didTapSettings?()
     }
 }

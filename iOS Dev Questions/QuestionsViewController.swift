@@ -14,6 +14,8 @@ final class QuestionsViewController: UITableViewController {
     
     /// Called when topics/questions should be retrieved
     var getTopics: EmptyClosure?
+    var showSettings: EmptyClosure?
+    var showQuestionDetails: ((Question) -> Void)?
     
     
     // MARK: - Injected Properties
@@ -42,11 +44,14 @@ final class QuestionsViewController: UITableViewController {
     override func loadView() {
         mainTableView.dataSource = self
         mainTableView.delegate = self
+        mainTableView.didTapSettings = { [weak self] in self?.showSettings?() }
         view = mainTableView
     }
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        navigationItem.rightBarButtonItem = mainTableView.settingsBarItem
+        
         getTopics?()
     }
 
@@ -88,5 +93,11 @@ final class QuestionsViewController: UITableViewController {
     override func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
         let topic = topics[section]
         return TopicHeaderView(title: topic.title)
+    }
+    
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let topic = topics[indexPath.section]
+        let question = topic.questions[indexPath.row]
+        showQuestionDetails?(question)
     }
 }
