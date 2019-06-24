@@ -22,7 +22,6 @@
 		9EA067A422BE05AD006326D1 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EA067A322BE05AD006326D1 /* User.swift */; };
 		9EA067A622BE0622006326D1 /* AuthContext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EA067A522BE0622006326D1 /* AuthContext.swift */; };
 		9EA067A822BE0C28006326D1 /* SessionFlow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EA067A722BE0C28006326D1 /* SessionFlow.swift */; };
-		9EA067AA22BE0C9B006326D1 /* SessionContext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EA067A922BE0C9B006326D1 /* SessionContext.swift */; };
 		9EA067AC22BE0E60006326D1 /* PersistenceService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EA067AB22BE0E60006326D1 /* PersistenceService.swift */; };
 		9EA067B722BE1A06006326D1 /* OnboardingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EA067B622BE1A06006326D1 /* OnboardingViewController.swift */; };
 		9EA067B922BE1A44006326D1 /* OnboardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EA067B822BE1A44006326D1 /* OnboardingView.swift */; };
@@ -106,7 +105,6 @@
 		9EA067A322BE05AD006326D1 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		9EA067A522BE0622006326D1 /* AuthContext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthContext.swift; sourceTree = "<group>"; };
 		9EA067A722BE0C28006326D1 /* SessionFlow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionFlow.swift; sourceTree = "<group>"; };
-		9EA067A922BE0C9B006326D1 /* SessionContext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionContext.swift; sourceTree = "<group>"; };
 		9EA067AB22BE0E60006326D1 /* PersistenceService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersistenceService.swift; sourceTree = "<group>"; };
 		9EA067B622BE1A06006326D1 /* OnboardingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingViewController.swift; sourceTree = "<group>"; };
 		9EA067B822BE1A44006326D1 /* OnboardingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingView.swift; sourceTree = "<group>"; };
@@ -228,22 +226,12 @@
 		9EA067AD22BE14D9006326D1 /* Auth */ = {
 			isa = PBXGroup;
 			children = (
-				9EA067A122BE02EB006326D1 /* AuthFlow.swift */,
-				9EA067A522BE0622006326D1 /* AuthContext.swift */,
-				9EA067C822BF4EE7006326D1 /* SignUpViewController.swift */,
-				9EA067CC22BFEFF8006326D1 /* LogoCell.swift */,
-				9EA067D222C003CE006326D1 /* EmailInputFieldCell.swift */,
-				9EA067D622C00935006326D1 /* PasswordInputFieldCell.swift */,
-				9EA067D822C0113F006326D1 /* FullNameInputFieldCell.swift */,
-				9EA067E222C03E89006326D1 /* SignUpView.swift */,
-				9EA067E422C047B9006326D1 /* Name.swift */,
-				9EA067E622C04A27006326D1 /* Email.swift */,
-				9EA067E822C04B72006326D1 /* Password.swift */,
-				9EA067EA22C04CA6006326D1 /* SignUpCredentials.swift */,
-				9EA067F022C05945006326D1 /* FirebaseAuthService.swift */,
-				9EA067F422C0650A006326D1 /* LoginViewController.swift */,
-				9EA067F622C06533006326D1 /* LoginView.swift */,
-				9EA067F822C06FB2006326D1 /* LoginCredentials.swift */,
+				9EA0685B22C0CCF9006326D1 /* Flow */,
+				9EA0685C22C0CD05006326D1 /* Context */,
+				9EA0685D22C0CD16006326D1 /* Model */,
+				9EA0685F22C0CD50006326D1 /* View */,
+				9EA0685E22C0CD2E006326D1 /* Controller */,
+				9EA0686022C0CD6C006326D1 /* Service */,
 			);
 			path = Auth;
 			sourceTree = "<group>";
@@ -251,20 +239,12 @@
 		9EA067AE22BE14EF006326D1 /* Session */ = {
 			isa = PBXGroup;
 			children = (
-				9EA067A722BE0C28006326D1 /* SessionFlow.swift */,
-				9EA067A922BE0C9B006326D1 /* SessionContext.swift */,
-				9EA0683822C079DA006326D1 /* QuestionsViewController.swift */,
-				9EA0683A22C07F03006326D1 /* QuestionsView.swift */,
-				9EA0683C22C07F2D006326D1 /* QuestionsContext.swift */,
-				9EA0683E22C07F65006326D1 /* FirebaseDatabaseService.swift */,
-				9EA0684022C07FAB006326D1 /* QuestionCell.swift */,
-				9EA0684222C07FF1006326D1 /* Question.swift */,
-				9EA0684622C080A9006326D1 /* Topic.swift */,
-				9EA0684822C083F1006326D1 /* QuestionDetailsViewController.swift */,
-				9EA0684A22C083FF006326D1 /* QuestionDetailsView.swift */,
-				9EA0684C22C08FE4006326D1 /* TopicHeaderView.swift */,
-				9EA0684E22C098E6006326D1 /* SessionNavigationController.swift */,
-				9EA0685022C09E16006326D1 /* SuggestedQuestion.swift */,
+				9EA0686122C0CD9A006326D1 /* Flow */,
+				9EA0686222C0CDA4006326D1 /* Context */,
+				9EA0686522C0CDFD006326D1 /* Model */,
+				9EA0686422C0CDD9006326D1 /* View */,
+				9EA0686322C0CDC3006326D1 /* Controller */,
+				9EA0686622C0CE11006326D1 /* Service */,
 			);
 			name = Session;
 			sourceTree = "<group>";
@@ -273,53 +253,262 @@
 			isa = PBXGroup;
 			children = (
 				9EA0677C22BDF0B1006326D1 /* Assets.xcassets */,
-				9EA067B222BE1553006326D1 /* Resources */,
-				9EA0677E22BDF0B1006326D1 /* LaunchScreen.storyboard */,
-				9EA0677222BDF0AF006326D1 /* AppDelegate.swift */,
 				9EA0678122BDF0B1006326D1 /* Info.plist */,
 				9EA067EE22C057C2006326D1 /* GoogleService-Info.plist */,
-				9EA0677922BDF0AF006326D1 /* iOS_Dev_Questions.xcdatamodeld */,
-				9EA0679522BDF536006326D1 /* AppContext.swift */,
-				9EA0679B22BDFC52006326D1 /* AppFlow.swift */,
-				9EA0679F22BE0140006326D1 /* InitialViewController.swift */,
-				9EA0679722BDF94A006326D1 /* UserSettings.swift */,
-				9EA067AB22BE0E60006326D1 /* PersistenceService.swift */,
-				9EA067A322BE05AD006326D1 /* User.swift */,
 				9EA0679922BDFC1D006326D1 /* GlobalTypealiases.swift */,
-				9EA067BE22BE29EE006326D1 /* InitialImageView.swift */,
-				9EA067C022BE7E56006326D1 /* UIColorExtensions.swift */,
-				9EA067CA22BFCF2B006326D1 /* IdentifiableCell.swift */,
-				9EA067CE22BFFC93006326D1 /* InputFieldCell.swift */,
-				9EA067D022BFFDAC006326D1 /* GradientLayerExtensions.swift */,
-				9EA067D422C006F2006326D1 /* GradientView.swift */,
-				9EA067DA22C01658006326D1 /* PillButton.swift */,
-				9EA067DC22C01A22006326D1 /* PillButtonCell.swift */,
-				9EA067DE22C0230E006326D1 /* TextButton.swift */,
-				9EA067E022C026DA006326D1 /* TextButtonCell.swift */,
-				9EA067F222C05F49006326D1 /* AlertService.swift */,
+				9EA0685322C0CBA9006326D1 /* Flow */,
+				9EA0685A22C0CC9A006326D1 /* Context */,
+				9EA0685722C0CC29006326D1 /* Model */,
+				9EA0685522C0CBDF006326D1 /* View */,
+				9EA0685822C0CC4E006326D1 /* Controller */,
+				9EA0685922C0CC67006326D1 /* Service */,
+				9EA0685622C0CC02006326D1 /* Protocols */,
+				9EA0685422C0CBBA006326D1 /* Extensions */,
 			);
 			path = App;
-			sourceTree = "<group>";
-		};
-		9EA067B222BE1553006326D1 /* Resources */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Resources;
 			sourceTree = "<group>";
 		};
 		9EA067B322BE159E006326D1 /* Onboarding */ = {
 			isa = PBXGroup;
 			children = (
-				9EA0679D22BDFD81006326D1 /* OnboardingFlow.swift */,
-				9EA067C622BE8BDF006326D1 /* OnboardingContext.swift */,
-				9EA067B622BE1A06006326D1 /* OnboardingViewController.swift */,
-				9EA067B822BE1A44006326D1 /* OnboardingView.swift */,
-				9EA067BA22BE1AA0006326D1 /* OnboardingViewCell.swift */,
-				9EA067BC22BE1B1A006326D1 /* OnboardData.swift */,
-				9EA067C222BE82B3006326D1 /* OnboardingDataCollectionView.swift */,
+				9EA0686B22C0CE87006326D1 /* Model */,
+				9EA0686722C0CE40006326D1 /* Flow */,
+				9EA0686822C0CE4B006326D1 /* Context */,
+				9EA0686A22C0CE6B006326D1 /* View */,
+				9EA0686922C0CE58006326D1 /* Controller */,
 			);
 			path = Onboarding;
+			sourceTree = "<group>";
+		};
+		9EA0685322C0CBA9006326D1 /* Flow */ = {
+			isa = PBXGroup;
+			children = (
+				9EA0679B22BDFC52006326D1 /* AppFlow.swift */,
+			);
+			path = Flow;
+			sourceTree = "<group>";
+		};
+		9EA0685422C0CBBA006326D1 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				9EA067C022BE7E56006326D1 /* UIColorExtensions.swift */,
+				9EA067D022BFFDAC006326D1 /* GradientLayerExtensions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		9EA0685522C0CBDF006326D1 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				9EA0677E22BDF0B1006326D1 /* LaunchScreen.storyboard */,
+				9EA067BE22BE29EE006326D1 /* InitialImageView.swift */,
+				9EA067D422C006F2006326D1 /* GradientView.swift */,
+				9EA067DA22C01658006326D1 /* PillButton.swift */,
+				9EA067DC22C01A22006326D1 /* PillButtonCell.swift */,
+				9EA067DE22C0230E006326D1 /* TextButton.swift */,
+				9EA067E022C026DA006326D1 /* TextButtonCell.swift */,
+				9EA067CE22BFFC93006326D1 /* InputFieldCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		9EA0685622C0CC02006326D1 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				9EA067CA22BFCF2B006326D1 /* IdentifiableCell.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		9EA0685722C0CC29006326D1 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				9EA0677922BDF0AF006326D1 /* iOS_Dev_Questions.xcdatamodeld */,
+				9EA067A322BE05AD006326D1 /* User.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		9EA0685822C0CC4E006326D1 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				9EA0679F22BE0140006326D1 /* InitialViewController.swift */,
+				9EA0677222BDF0AF006326D1 /* AppDelegate.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		9EA0685922C0CC67006326D1 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				9EA067F222C05F49006326D1 /* AlertService.swift */,
+				9EA0679722BDF94A006326D1 /* UserSettings.swift */,
+				9EA067AB22BE0E60006326D1 /* PersistenceService.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		9EA0685A22C0CC9A006326D1 /* Context */ = {
+			isa = PBXGroup;
+			children = (
+				9EA0679522BDF536006326D1 /* AppContext.swift */,
+			);
+			path = Context;
+			sourceTree = "<group>";
+		};
+		9EA0685B22C0CCF9006326D1 /* Flow */ = {
+			isa = PBXGroup;
+			children = (
+				9EA067A122BE02EB006326D1 /* AuthFlow.swift */,
+			);
+			path = Flow;
+			sourceTree = "<group>";
+		};
+		9EA0685C22C0CD05006326D1 /* Context */ = {
+			isa = PBXGroup;
+			children = (
+				9EA067A522BE0622006326D1 /* AuthContext.swift */,
+			);
+			path = Context;
+			sourceTree = "<group>";
+		};
+		9EA0685D22C0CD16006326D1 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				9EA067E422C047B9006326D1 /* Name.swift */,
+				9EA067E622C04A27006326D1 /* Email.swift */,
+				9EA067E822C04B72006326D1 /* Password.swift */,
+				9EA067EA22C04CA6006326D1 /* SignUpCredentials.swift */,
+				9EA067F822C06FB2006326D1 /* LoginCredentials.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		9EA0685E22C0CD2E006326D1 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				9EA067C822BF4EE7006326D1 /* SignUpViewController.swift */,
+				9EA067F422C0650A006326D1 /* LoginViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		9EA0685F22C0CD50006326D1 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				9EA067CC22BFEFF8006326D1 /* LogoCell.swift */,
+				9EA067D222C003CE006326D1 /* EmailInputFieldCell.swift */,
+				9EA067D622C00935006326D1 /* PasswordInputFieldCell.swift */,
+				9EA067D822C0113F006326D1 /* FullNameInputFieldCell.swift */,
+				9EA067E222C03E89006326D1 /* SignUpView.swift */,
+				9EA067F622C06533006326D1 /* LoginView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		9EA0686022C0CD6C006326D1 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				9EA067F022C05945006326D1 /* FirebaseAuthService.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		9EA0686122C0CD9A006326D1 /* Flow */ = {
+			isa = PBXGroup;
+			children = (
+				9EA067A722BE0C28006326D1 /* SessionFlow.swift */,
+			);
+			name = Flow;
+			sourceTree = "<group>";
+		};
+		9EA0686222C0CDA4006326D1 /* Context */ = {
+			isa = PBXGroup;
+			children = (
+				9EA0683C22C07F2D006326D1 /* QuestionsContext.swift */,
+			);
+			name = Context;
+			sourceTree = "<group>";
+		};
+		9EA0686322C0CDC3006326D1 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				9EA0683822C079DA006326D1 /* QuestionsViewController.swift */,
+				9EA0684822C083F1006326D1 /* QuestionDetailsViewController.swift */,
+				9EA0684E22C098E6006326D1 /* SessionNavigationController.swift */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		9EA0686422C0CDD9006326D1 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				9EA0683A22C07F03006326D1 /* QuestionsView.swift */,
+				9EA0684022C07FAB006326D1 /* QuestionCell.swift */,
+				9EA0684A22C083FF006326D1 /* QuestionDetailsView.swift */,
+				9EA0684C22C08FE4006326D1 /* TopicHeaderView.swift */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		9EA0686522C0CDFD006326D1 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				9EA0684222C07FF1006326D1 /* Question.swift */,
+				9EA0684622C080A9006326D1 /* Topic.swift */,
+				9EA0685022C09E16006326D1 /* SuggestedQuestion.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		9EA0686622C0CE11006326D1 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				9EA0683E22C07F65006326D1 /* FirebaseDatabaseService.swift */,
+			);
+			name = Service;
+			sourceTree = "<group>";
+		};
+		9EA0686722C0CE40006326D1 /* Flow */ = {
+			isa = PBXGroup;
+			children = (
+				9EA0679D22BDFD81006326D1 /* OnboardingFlow.swift */,
+			);
+			path = Flow;
+			sourceTree = "<group>";
+		};
+		9EA0686822C0CE4B006326D1 /* Context */ = {
+			isa = PBXGroup;
+			children = (
+				9EA067C622BE8BDF006326D1 /* OnboardingContext.swift */,
+			);
+			path = Context;
+			sourceTree = "<group>";
+		};
+		9EA0686922C0CE58006326D1 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				9EA067B622BE1A06006326D1 /* OnboardingViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		9EA0686A22C0CE6B006326D1 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				9EA067B822BE1A44006326D1 /* OnboardingView.swift */,
+				9EA067BA22BE1AA0006326D1 /* OnboardingViewCell.swift */,
+				9EA067C222BE82B3006326D1 /* OnboardingDataCollectionView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		9EA0686B22C0CE87006326D1 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				9EA067BC22BE1B1A006326D1 /* OnboardData.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 		ED6051C7F7EBDB9C8943697A /* Pods */ = {
@@ -530,7 +719,6 @@
 				9EA067E322C03E89006326D1 /* SignUpView.swift in Sources */,
 				9EA067B722BE1A06006326D1 /* OnboardingViewController.swift in Sources */,
 				9EA067E122C026DA006326D1 /* TextButtonCell.swift in Sources */,
-				9EA067AA22BE0C9B006326D1 /* SessionContext.swift in Sources */,
 				9EA067EB22C04CA6006326D1 /* SignUpCredentials.swift in Sources */,
 				9EA067C722BE8BDF006326D1 /* OnboardingContext.swift in Sources */,
 				9EA067BB22BE1AA0006326D1 /* OnboardingViewCell.swift in Sources */,
