@@ -38,6 +38,9 @@ final class AppFlow {
     func didFinishLaunching() -> Bool {
         window.rootViewController = InitialViewController()
         window.makeKeyAndVisible()
+        
+        FirebaseApp.configure()
+        
         return didStartSubFlow()
     }
     
@@ -50,7 +53,8 @@ final class AppFlow {
         switch context.state {
         case .onboarding: startOnboardingFlow()
         case .auth: startAuthFlow()
-        case .main: startSessionFlow()
+        case .session: break
+//            startSessionFlow()
         }
         
         return true
@@ -70,11 +74,11 @@ final class AppFlow {
     /// Responsible for configuring the auth flow and handling flow after it has finished
     private func startAuthFlow() {
         authFlow.startSignUp(with: rootViewController)
-        authFlow.signIn = { [weak self] in self?.startSessionFlow() }
+        authFlow.signIn = { [weak self] in self?.startSessionFlow(with: $0) }
     }
     
     /// Responsible for configuring the main flow and navigating after logging out
-    private func startSessionFlow() {
+    private func startSessionFlow(with user: User) {
         sessionFlow.start(with: rootViewController)
         sessionFlow.logout = { [weak self] in self?.startAuthFlow() }
     }

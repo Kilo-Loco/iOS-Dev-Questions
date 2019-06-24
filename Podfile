@@ -6,6 +6,7 @@ target 'iOS Dev Questions' do
   use_frameworks!
 
   # Pods for iOS Dev Questions
+  pod 'Firebase/Core'
   pod 'Firebase/Analytics'
   pod 'Firebase/Auth'
 

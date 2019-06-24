@@ -50,7 +50,9 @@
 		9EA067E722C04A27006326D1 /* Email.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EA067E622C04A27006326D1 /* Email.swift */; };
 		9EA067E922C04B72006326D1 /* Password.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EA067E822C04B72006326D1 /* Password.swift */; };
 		9EA067EB22C04CA6006326D1 /* SignUpCredentials.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EA067EA22C04CA6006326D1 /* SignUpCredentials.swift */; };
-		9EA067ED22C05618006326D1 /* FirebaseAuthenticationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EA067EC22C05618006326D1 /* FirebaseAuthenticationService.swift */; };
+		9EA067EF22C057C2006326D1 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9EA067EE22C057C2006326D1 /* GoogleService-Info.plist */; };
+		9EA067F122C05945006326D1 /* FirebaseAuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EA067F022C05945006326D1 /* FirebaseAuthService.swift */; };
+		9EA067F322C05F49006326D1 /* AlertService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EA067F222C05F49006326D1 /* AlertService.swift */; };
 		9FE301ADC631501747BD3113 /* Pods_iOS_Dev_QuestionsTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E97AF6DBE90134B49DAFAFA1 /* Pods_iOS_Dev_QuestionsTests.framework */; };
 		E88AC639D1E5EC6612DF5146 /* Pods_iOS_Dev_Questions.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8EDE94D1873241EB9B6F501B /* Pods_iOS_Dev_Questions.framework */; };
 /* End PBXBuildFile section */
@@ -117,7 +119,9 @@
 		9EA067E622C04A27006326D1 /* Email.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Email.swift; sourceTree = "<group>"; };
 		9EA067E822C04B72006326D1 /* Password.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Password.swift; sourceTree = "<group>"; };
 		9EA067EA22C04CA6006326D1 /* SignUpCredentials.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpCredentials.swift; sourceTree = "<group>"; };
-		9EA067EC22C05618006326D1 /* FirebaseAuthenticationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseAuthenticationService.swift; sourceTree = "<group>"; };
+		9EA067EE22C057C2006326D1 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		9EA067F022C05945006326D1 /* FirebaseAuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseAuthService.swift; sourceTree = "<group>"; };
+		9EA067F222C05F49006326D1 /* AlertService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertService.swift; sourceTree = "<group>"; };
 		CAAF496EFBCE07B36FC6D893 /* Pods-iOS Dev QuestionsTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOS Dev QuestionsTests.release.xcconfig"; path = "Target Support Files/Pods-iOS Dev QuestionsTests/Pods-iOS Dev QuestionsTests.release.xcconfig"; sourceTree = "<group>"; };
 		E97AF6DBE90134B49DAFAFA1 /* Pods_iOS_Dev_QuestionsTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_iOS_Dev_QuestionsTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -206,6 +210,7 @@
 				9EA067E622C04A27006326D1 /* Email.swift */,
 				9EA067E822C04B72006326D1 /* Password.swift */,
 				9EA067EA22C04CA6006326D1 /* SignUpCredentials.swift */,
+				9EA067F022C05945006326D1 /* FirebaseAuthService.swift */,
 			);
 			path = Auth;
 			sourceTree = "<group>";
@@ -227,6 +232,7 @@
 				9EA0677E22BDF0B1006326D1 /* LaunchScreen.storyboard */,
 				9EA0677222BDF0AF006326D1 /* AppDelegate.swift */,
 				9EA0678122BDF0B1006326D1 /* Info.plist */,
+				9EA067EE22C057C2006326D1 /* GoogleService-Info.plist */,
 				9EA0677922BDF0AF006326D1 /* iOS_Dev_Questions.xcdatamodeld */,
 				9EA0679522BDF536006326D1 /* AppContext.swift */,
 				9EA0679B22BDFC52006326D1 /* AppFlow.swift */,
@@ -245,7 +251,7 @@
 				9EA067DC22C01A22006326D1 /* PillButtonCell.swift */,
 				9EA067DE22C0230E006326D1 /* TextButtton.swift */,
 				9EA067E022C026DA006326D1 /* TextButtonCell.swift */,
-				9EA067EC22C05618006326D1 /* FirebaseAuthenticationService.swift */,
+				9EA067F222C05F49006326D1 /* AlertService.swift */,
 			);
 			path = App;
 			sourceTree = "<group>";
@@ -368,6 +374,7 @@
 			files = (
 				9EA0678022BDF0B1006326D1 /* LaunchScreen.storyboard in Resources */,
 				9EA0677D22BDF0B1006326D1 /* Assets.xcassets in Resources */,
+				9EA067EF22C057C2006326D1 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -465,6 +472,7 @@
 				9EA067C922BF4EE7006326D1 /* SignUpViewController.swift in Sources */,
 				9EA067D122BFFDAC006326D1 /* GradientLayerExtensions.swift in Sources */,
 				9EA0679822BDF94A006326D1 /* UserSettings.swift in Sources */,
+				9EA067F322C05F49006326D1 /* AlertService.swift in Sources */,
 				9EA067DD22C01A22006326D1 /* PillButtonCell.swift in Sources */,
 				9EA067D922C0113F006326D1 /* FullNameInputFieldCell.swift in Sources */,
 				9EA067E322C03E89006326D1 /* SignUpView.swift in Sources */,
@@ -480,12 +488,12 @@
 				9EA067BD22BE1B1A006326D1 /* OnboardData.swift in Sources */,
 				9EA067AC22BE0E60006326D1 /* PersistenceService.swift in Sources */,
 				9EA067E522C047B9006326D1 /* Name.swift in Sources */,
+				9EA067F122C05945006326D1 /* FirebaseAuthService.swift in Sources */,
 				9EA067A822BE0C28006326D1 /* SessionFlow.swift in Sources */,
 				9EA067DB22C01658006326D1 /* PillButton.swift in Sources */,
 				9EA067A222BE02EB006326D1 /* AuthFlow.swift in Sources */,
 				9EA067B922BE1A44006326D1 /* OnboardingView.swift in Sources */,
 				9EA067A422BE05AD006326D1 /* User.swift in Sources */,
-				9EA067ED22C05618006326D1 /* FirebaseAuthenticationService.swift in Sources */,
 				9EA067A622BE0622006326D1 /* AuthContext.swift in Sources */,
 				9EA067D522C006F2006326D1 /* GradientView.swift in Sources */,
 				9EA067BF22BE29EE006326D1 /* InitialImageView.swift in Sources */,

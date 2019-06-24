@@ -14,20 +14,22 @@ final class AuthFlow {
     // MARK: - Communication
     
     /// Called once the user has been authorized and received credentials to enter the main app
-    var signIn: EmptyClosure?
+    var signIn: ((User) -> Void)?
     
     
     // MARK: - Injected properties
     
     private let context: AuthContext
     private let userSettings: UserSettings
+    private let alertService: AlertService
     
     
     // MARK: - Initializer
     
-    init(context: AuthContext = .init(), userSettings: UserSettings) {
+    init(context: AuthContext = .init(), userSettings: UserSettings, alertService: AlertService = .init()) {
         self.context = context
         self.userSettings = userSettings
+        self.alertService = alertService
     }
     
     // MARK: - Start Flow
@@ -38,13 +40,17 @@ final class AuthFlow {
     func startSignUp(with rootViewController: UIViewController) {
         let signUpVC = SignUpViewController()
         
-        signUpVC.didProvideSignUpCredentials = { [weak self] in
+        signUpVC.didProvideSignUpCredentials = { [weak self, signUpVC] in
             
             self?.context.signUp(with: $0, $1, $2, completion: { (result) in
                 
                 switch result {
-                case .success(let user): print(user)
-                case .failure(let error): print(error.localizedDescription)
+                case .success(let user):
+                    self?.signIn?(user)
+                    
+                case .failure(let error):
+                    guard let alert = self?.alertService.generateAlert(for: error) else { return }
+                    signUpVC.present(alert, animated: true)
                 }
             })
         }

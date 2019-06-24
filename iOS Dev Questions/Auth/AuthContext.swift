@@ -12,6 +12,12 @@ final class AuthContext {
     
     var signIn: ((User) -> Void)?
     
+    private let auth: FirebaseAuthService
+    
+    init(auth: FirebaseAuthService = .init()) {
+        self.auth = auth
+    }
+    
     func signUp(with fullName: String,
                 _ email: String,
                 _ password: String,
@@ -26,7 +32,7 @@ final class AuthContext {
                                                       email: validEmail,
                                                       password: validPassword)
             
-            print(signUpCredentials)
+            auth.signUp(with: signUpCredentials, completion: completion)
             
         } catch {
             print(error)

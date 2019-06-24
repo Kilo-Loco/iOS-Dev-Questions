@@ -42,7 +42,7 @@ final class AppContext: NSObject {
             
             if userSettings.bool(for: .userHasSignedIn) {
                 // User has successfully signed in
-                return .main
+                return .session
                 
             } else {
                 // User is not signed in
@@ -84,6 +84,6 @@ extension AppContext {
         case auth
         
         // User has successfully signed in and can use the main app
-        case main
+        case session
     }
 }
