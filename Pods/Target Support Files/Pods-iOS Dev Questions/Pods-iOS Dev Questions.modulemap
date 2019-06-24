@@ -1,0 +1,6 @@
+framework module Pods_iOS_Dev_Questions {
+  umbrella header "Pods-iOS Dev Questions-umbrella.h"
+
+  export *
+  module * { export * }
+}

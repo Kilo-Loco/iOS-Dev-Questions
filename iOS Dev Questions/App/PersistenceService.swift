@@ -1,5 +1,5 @@
 //
-//  PersistenceInteractor.swift
+//  PersistenceService.swift
 //  iOS Dev Questions
 //
 //  Created by Kyle Lee on 6/22/19.
@@ -9,7 +9,7 @@
 import CoreData
 
 /// Responsible for saving data locally to the device
-final class PersistenceInteractor {
+final class PersistenceService {
     
     private lazy var persistentContainer: NSPersistentContainer = {
         let container = NSPersistentContainer(name: "iOS_Dev_Questions")

@@ -45,7 +45,13 @@ final class TextButtonCell: UITableViewCell {
     // MARK: - Setup Subviews
     
     private func setup() {
-        button.didTap = { [weak self] in self?.didTapButton?() }
+        selectionStyle = .none
+        
+        button.didTap = { [weak self] in
+            DispatchQueue.main.async {
+                self?.didTapButton?()
+            }
+        }
         
         contentView.addSubview(button)
         

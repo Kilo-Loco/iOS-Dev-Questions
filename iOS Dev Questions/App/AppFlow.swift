@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Firebase
 
 /// Responsible for navigating the user to the correct flow based on the context
 final class AppFlow {

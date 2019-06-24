@@ -19,12 +19,12 @@ final class AppContext: NSObject {
     // MARK: - Injected Instance Variables
     private let application: UIApplication
     let userSettings: UserSettings
-    private let persistence: PersistenceInteractor
+    private let persistence: PersistenceService
     
     // MARK: - Initializer
     init(application: UIApplication,
          userSettings: UserSettings = .init(),
-         persistenceInteractor: PersistenceInteractor = .init()) {
+         persistenceInteractor: PersistenceService = .init()) {
         self.application = application
         self.userSettings = userSettings
         self.persistence = persistenceInteractor

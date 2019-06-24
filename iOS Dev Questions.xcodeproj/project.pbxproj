@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -23,7 +23,7 @@
 		9EA067A622BE0622006326D1 /* AuthContext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EA067A522BE0622006326D1 /* AuthContext.swift */; };
 		9EA067A822BE0C28006326D1 /* SessionFlow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EA067A722BE0C28006326D1 /* SessionFlow.swift */; };
 		9EA067AA22BE0C9B006326D1 /* SessionContext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EA067A922BE0C9B006326D1 /* SessionContext.swift */; };
-		9EA067AC22BE0E60006326D1 /* PersistenceInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EA067AB22BE0E60006326D1 /* PersistenceInteractor.swift */; };
+		9EA067AC22BE0E60006326D1 /* PersistenceService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EA067AB22BE0E60006326D1 /* PersistenceService.swift */; };
 		9EA067B722BE1A06006326D1 /* OnboardingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EA067B622BE1A06006326D1 /* OnboardingViewController.swift */; };
 		9EA067B922BE1A44006326D1 /* OnboardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EA067B822BE1A44006326D1 /* OnboardingView.swift */; };
 		9EA067BB22BE1AA0006326D1 /* OnboardingViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EA067BA22BE1AA0006326D1 /* OnboardingViewCell.swift */; };
@@ -50,6 +50,9 @@
 		9EA067E722C04A27006326D1 /* Email.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EA067E622C04A27006326D1 /* Email.swift */; };
 		9EA067E922C04B72006326D1 /* Password.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EA067E822C04B72006326D1 /* Password.swift */; };
 		9EA067EB22C04CA6006326D1 /* SignUpCredentials.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EA067EA22C04CA6006326D1 /* SignUpCredentials.swift */; };
+		9EA067ED22C05618006326D1 /* FirebaseAuthenticationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EA067EC22C05618006326D1 /* FirebaseAuthenticationService.swift */; };
+		9FE301ADC631501747BD3113 /* Pods_iOS_Dev_QuestionsTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E97AF6DBE90134B49DAFAFA1 /* Pods_iOS_Dev_QuestionsTests.framework */; };
+		E88AC639D1E5EC6612DF5146 /* Pods_iOS_Dev_Questions.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8EDE94D1873241EB9B6F501B /* Pods_iOS_Dev_Questions.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,6 +66,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0F9C5C9F9420BAED7B1194D9 /* Pods-iOS Dev Questions.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOS Dev Questions.release.xcconfig"; path = "Target Support Files/Pods-iOS Dev Questions/Pods-iOS Dev Questions.release.xcconfig"; sourceTree = "<group>"; };
+		6CABC92A00720F9FE5D21EB3 /* Pods-iOS Dev QuestionsTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOS Dev QuestionsTests.debug.xcconfig"; path = "Target Support Files/Pods-iOS Dev QuestionsTests/Pods-iOS Dev QuestionsTests.debug.xcconfig"; sourceTree = "<group>"; };
+		8EDE94D1873241EB9B6F501B /* Pods_iOS_Dev_Questions.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_iOS_Dev_Questions.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		93053EE765831E9ABDD96B15 /* Pods-iOS Dev Questions.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOS Dev Questions.debug.xcconfig"; path = "Target Support Files/Pods-iOS Dev Questions/Pods-iOS Dev Questions.debug.xcconfig"; sourceTree = "<group>"; };
 		9EA0676F22BDF0AF006326D1 /* iOS Dev Questions.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "iOS Dev Questions.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9EA0677222BDF0AF006326D1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9EA0677A22BDF0AF006326D1 /* iOS_Dev_Questions.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = iOS_Dev_Questions.xcdatamodel; sourceTree = "<group>"; };
@@ -83,7 +90,7 @@
 		9EA067A522BE0622006326D1 /* AuthContext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthContext.swift; sourceTree = "<group>"; };
 		9EA067A722BE0C28006326D1 /* SessionFlow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionFlow.swift; sourceTree = "<group>"; };
 		9EA067A922BE0C9B006326D1 /* SessionContext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionContext.swift; sourceTree = "<group>"; };
-		9EA067AB22BE0E60006326D1 /* PersistenceInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersistenceInteractor.swift; sourceTree = "<group>"; };
+		9EA067AB22BE0E60006326D1 /* PersistenceService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersistenceService.swift; sourceTree = "<group>"; };
 		9EA067B622BE1A06006326D1 /* OnboardingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingViewController.swift; sourceTree = "<group>"; };
 		9EA067B822BE1A44006326D1 /* OnboardingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingView.swift; sourceTree = "<group>"; };
 		9EA067BA22BE1AA0006326D1 /* OnboardingViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingViewCell.swift; sourceTree = "<group>"; };
@@ -110,6 +117,9 @@
 		9EA067E622C04A27006326D1 /* Email.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Email.swift; sourceTree = "<group>"; };
 		9EA067E822C04B72006326D1 /* Password.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Password.swift; sourceTree = "<group>"; };
 		9EA067EA22C04CA6006326D1 /* SignUpCredentials.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpCredentials.swift; sourceTree = "<group>"; };
+		9EA067EC22C05618006326D1 /* FirebaseAuthenticationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseAuthenticationService.swift; sourceTree = "<group>"; };
+		CAAF496EFBCE07B36FC6D893 /* Pods-iOS Dev QuestionsTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOS Dev QuestionsTests.release.xcconfig"; path = "Target Support Files/Pods-iOS Dev QuestionsTests/Pods-iOS Dev QuestionsTests.release.xcconfig"; sourceTree = "<group>"; };
+		E97AF6DBE90134B49DAFAFA1 /* Pods_iOS_Dev_QuestionsTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_iOS_Dev_QuestionsTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -117,6 +127,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E88AC639D1E5EC6612DF5146 /* Pods_iOS_Dev_Questions.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -124,18 +135,30 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9FE301ADC631501747BD3113 /* Pods_iOS_Dev_QuestionsTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		75ED65141DD8B7549427AF16 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8EDE94D1873241EB9B6F501B /* Pods_iOS_Dev_Questions.framework */,
+				E97AF6DBE90134B49DAFAFA1 /* Pods_iOS_Dev_QuestionsTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		9EA0676622BDF0AF006326D1 = {
 			isa = PBXGroup;
 			children = (
 				9EA0677122BDF0AF006326D1 /* iOS Dev Questions */,
 				9EA0678922BDF0B1006326D1 /* iOS Dev QuestionsTests */,
 				9EA0677022BDF0AF006326D1 /* Products */,
+				ED6051C7F7EBDB9C8943697A /* Pods */,
+				75ED65141DD8B7549427AF16 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -209,7 +232,7 @@
 				9EA0679B22BDFC52006326D1 /* AppFlow.swift */,
 				9EA0679F22BE0140006326D1 /* InitialViewController.swift */,
 				9EA0679722BDF94A006326D1 /* UserSettings.swift */,
-				9EA067AB22BE0E60006326D1 /* PersistenceInteractor.swift */,
+				9EA067AB22BE0E60006326D1 /* PersistenceService.swift */,
 				9EA067A322BE05AD006326D1 /* User.swift */,
 				9EA0679922BDFC1D006326D1 /* GlobalTypealiases.swift */,
 				9EA067BE22BE29EE006326D1 /* InitialImageView.swift */,
@@ -222,6 +245,7 @@
 				9EA067DC22C01A22006326D1 /* PillButtonCell.swift */,
 				9EA067DE22C0230E006326D1 /* TextButtton.swift */,
 				9EA067E022C026DA006326D1 /* TextButtonCell.swift */,
+				9EA067EC22C05618006326D1 /* FirebaseAuthenticationService.swift */,
 			);
 			path = App;
 			sourceTree = "<group>";
@@ -247,6 +271,17 @@
 			path = Onboarding;
 			sourceTree = "<group>";
 		};
+		ED6051C7F7EBDB9C8943697A /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				93053EE765831E9ABDD96B15 /* Pods-iOS Dev Questions.debug.xcconfig */,
+				0F9C5C9F9420BAED7B1194D9 /* Pods-iOS Dev Questions.release.xcconfig */,
+				6CABC92A00720F9FE5D21EB3 /* Pods-iOS Dev QuestionsTests.debug.xcconfig */,
+				CAAF496EFBCE07B36FC6D893 /* Pods-iOS Dev QuestionsTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -254,9 +289,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 9EA0678F22BDF0B1006326D1 /* Build configuration list for PBXNativeTarget "iOS Dev Questions" */;
 			buildPhases = (
+				F8E1C8B8EE4C490F04A5427B /* [CP] Check Pods Manifest.lock */,
 				9EA0676B22BDF0AF006326D1 /* Sources */,
 				9EA0676C22BDF0AF006326D1 /* Frameworks */,
 				9EA0676D22BDF0AF006326D1 /* Resources */,
+				1CD9CBD80E8DA7889F4717FF /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -271,6 +308,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 9EA0679222BDF0B1006326D1 /* Build configuration list for PBXNativeTarget "iOS Dev QuestionsTests" */;
 			buildPhases = (
+				C321FE16BC3CFB94D267D70C /* [CP] Check Pods Manifest.lock */,
 				9EA0678222BDF0B1006326D1 /* Sources */,
 				9EA0678322BDF0B1006326D1 /* Frameworks */,
 				9EA0678422BDF0B1006326D1 /* Resources */,
@@ -342,6 +380,70 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		1CD9CBD80E8DA7889F4717FF /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-iOS Dev Questions/Pods-iOS Dev Questions-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-iOS Dev Questions/Pods-iOS Dev Questions-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-iOS Dev Questions/Pods-iOS Dev Questions-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C321FE16BC3CFB94D267D70C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-iOS Dev QuestionsTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F8E1C8B8EE4C490F04A5427B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-iOS Dev Questions-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		9EA0676B22BDF0AF006326D1 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -376,13 +478,14 @@
 				9EA067CF22BFFC93006326D1 /* InputFieldCell.swift in Sources */,
 				9EA0677B22BDF0AF006326D1 /* iOS_Dev_Questions.xcdatamodeld in Sources */,
 				9EA067BD22BE1B1A006326D1 /* OnboardData.swift in Sources */,
-				9EA067AC22BE0E60006326D1 /* PersistenceInteractor.swift in Sources */,
+				9EA067AC22BE0E60006326D1 /* PersistenceService.swift in Sources */,
 				9EA067E522C047B9006326D1 /* Name.swift in Sources */,
 				9EA067A822BE0C28006326D1 /* SessionFlow.swift in Sources */,
 				9EA067DB22C01658006326D1 /* PillButton.swift in Sources */,
 				9EA067A222BE02EB006326D1 /* AuthFlow.swift in Sources */,
 				9EA067B922BE1A44006326D1 /* OnboardingView.swift in Sources */,
 				9EA067A422BE05AD006326D1 /* User.swift in Sources */,
+				9EA067ED22C05618006326D1 /* FirebaseAuthenticationService.swift in Sources */,
 				9EA067A622BE0622006326D1 /* AuthContext.swift in Sources */,
 				9EA067D522C006F2006326D1 /* GradientView.swift in Sources */,
 				9EA067BF22BE29EE006326D1 /* InitialImageView.swift in Sources */,
@@ -538,6 +641,7 @@
 		};
 		9EA0679022BDF0B1006326D1 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 93053EE765831E9ABDD96B15 /* Pods-iOS Dev Questions.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -557,6 +661,7 @@
 		};
 		9EA0679122BDF0B1006326D1 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0F9C5C9F9420BAED7B1194D9 /* Pods-iOS Dev Questions.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -576,6 +681,7 @@
 		};
 		9EA0679322BDF0B1006326D1 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6CABC92A00720F9FE5D21EB3 /* Pods-iOS Dev QuestionsTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -597,6 +703,7 @@
 		};
 		9EA0679422BDF0B1006326D1 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CAAF496EFBCE07B36FC6D893 /* Pods-iOS Dev QuestionsTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";

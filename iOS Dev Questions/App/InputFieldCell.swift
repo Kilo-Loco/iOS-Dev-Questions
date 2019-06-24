@@ -85,7 +85,9 @@ class InputFieldCell: UITableViewCell {
     /// Handles the primary action from the keyboard
     @objc
     private func didTriggerPrimaryAction() {
-        primaryAction?()
+        DispatchQueue.main.async { [weak self] in
+            self?.primaryAction?()
+        }
     }
 }
 
