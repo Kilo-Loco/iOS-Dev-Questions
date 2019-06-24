@@ -37,6 +37,17 @@ final class AuthFlow {
     /// - Parameter rootViewController: The presenting view controller.
     func startSignUp(with rootViewController: UIViewController) {
         let signUpVC = SignUpViewController()
+        
+        signUpVC.didProvideSignUpCredentials = { [weak self] in
+            
+            self?.context.signUp(with: $0, $1, $2, completion: { (result) in
+                
+                switch result {
+                case .success(let user): print(user)
+                case .failure(let error): print(error.localizedDescription)
+                }
+            })
+        }
         rootViewController.present(signUpVC, animated: true)
     }
     

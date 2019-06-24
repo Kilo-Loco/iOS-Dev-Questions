@@ -11,7 +11,7 @@ import UIKit
 /// Displays the logo of the app
 final class LogoCell: UITableViewCell {
     
-    // MARK: - Visual Elements
+    // MARK: - Subviews
     
     lazy var logoImageView: UIImageView = {
         let imageView = UIImageView()
@@ -36,7 +36,7 @@ final class LogoCell: UITableViewCell {
         fatalError("init(coder:) has not been implemented")
     }
     
-    // MARK: - Setup Visual Elements
+    // MARK: - Setup Subviews
     
     private func setup() {
         selectionStyle = .none

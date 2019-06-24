@@ -22,7 +22,7 @@ final class EmailInputFieldCell: InputFieldCell {
         fatalError("init(coder:) has not been implemented")
     }
     
-    // MARK: - Visual Element Configuration
+    // MARK: - Setup Subview
     
     /// Modies the textfield to be email oriented
     private func configureTextField() {

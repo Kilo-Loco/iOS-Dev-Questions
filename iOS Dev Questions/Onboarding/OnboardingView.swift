@@ -18,7 +18,7 @@ final class OnboardingView: UIView {
     var didTapSkipButton: (() -> Void)?
     
     
-    // MARK: - Visual Elements
+    // MARK: - Subviews
     
     lazy var collectionView: OnboardingDataCollectionView = {
         let collectionView = OnboardingDataCollectionView()
@@ -50,7 +50,7 @@ final class OnboardingView: UIView {
     
     override init(frame: CGRect) {
         super.init(frame: frame)
-        setupView()
+        setup()
     }
     
     required init?(coder aDecoder: NSCoder) {
@@ -58,9 +58,9 @@ final class OnboardingView: UIView {
     }
     
     
-    // MARK: - Visual Element Setup
+    // MARK: - Setup Subviews
     
-    private func setupView() {
+    private func setup() {
         backgroundColor = .white
         
         addSubview(collectionView)

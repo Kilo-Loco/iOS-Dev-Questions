@@ -13,8 +13,8 @@ extension CAGradientLayer {
     static var hotPinkToMangoLayer: CAGradientLayer {
         let layer = CAGradientLayer()
         layer.colors = [UIColor.hotPink.cgColor, UIColor.mango.cgColor]
-        layer.startPoint = CGPoint(x: 0, y: 0)
-        layer.endPoint = CGPoint(x: 1, y: 1)
+        layer.startPoint = CGPoint(x: 0, y: 0.5)
+        layer.endPoint = CGPoint(x: 1, y: 0.5)
         return layer
     }
     

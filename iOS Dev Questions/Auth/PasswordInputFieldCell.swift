@@ -22,7 +22,7 @@ final class PasswordInputFieldCell: InputFieldCell {
         fatalError("init(coder:) has not been implemented")
     }
     
-    // MARK: - Visual Element Configuration
+    // MARK: - Setup Subviews
     
     /// Modies the textfield to be password oriented
     private func configureTextField() {

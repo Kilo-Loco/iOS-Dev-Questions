@@ -17,7 +17,7 @@ class InputFieldCell: UITableViewCell {
     var primaryAction: EmptyClosure?
     
     
-    // MARK: - Visual Elements
+    // MARK: - Subviews
     
     lazy var textField: UITextField = { [unowned self] in
         let textField = UITextField()
@@ -55,7 +55,7 @@ class InputFieldCell: UITableViewCell {
     }
     
     
-    // MARK: - Setup Visual Elements
+    // MARK: - Setup Subviews
     
     private func setup() {
         selectionStyle = .none

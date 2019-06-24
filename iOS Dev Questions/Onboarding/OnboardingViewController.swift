@@ -40,7 +40,7 @@ final class OnboardingViewController: UIViewController {
     }
     
     
-    // MARK: - Visual Element Setup
+    // MARK: - Setup Subviews
     
     /// Responsible for connecting delegates, providing relevant context info for
     /// properly displaying information, and routing events to approriate methods.
@@ -77,7 +77,7 @@ extension OnboardingViewController: UICollectionViewDataSource {
     }
     
     /// Attempts to cast the CollectionViewCell into an OnboardingViewCell, then sets populates
-    /// relevant visual elements with the provided OnboardingItem
+    /// relevant subviews with the provided OnboardingItem
     ///
     /// - Parameters:
     ///   - cell: A UICollectionViewCell that will be cast as an OnboardingViewCell to be populated

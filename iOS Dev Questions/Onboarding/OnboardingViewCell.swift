@@ -12,7 +12,7 @@ import UIKit
 /// the user.
 final class OnboardingViewCell: UICollectionViewCell {
     
-    // MARK: - Visual Elements
+    // MARK: - Subviews
     
     lazy var titleLabel: UILabel = {
         let label = UILabel()
@@ -62,7 +62,7 @@ final class OnboardingViewCell: UICollectionViewCell {
     }
     
     
-    // MARK: - Visual Element Setup
+    // MARK: - Setup Subviews
     
     private func setup() {
         let verticalSpacing = bounds.height * 0.06

@@ -11,7 +11,7 @@ import UIKit
 /// This is the view of the InitialViewController. It should look identical to the launch screen
 final class InitialImageView: UIView {
     
-    // MARK: - Visual Elements
+    // MARK: - Subviews
     lazy var imageView: UIImageView = {
         let imageView = UIImageView()
         imageView.translatesAutoresizingMaskIntoConstraints = false

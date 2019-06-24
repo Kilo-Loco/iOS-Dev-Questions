@@ -1,5 +1,5 @@
 //
-//  PillButtonCell.swift
+//  TextButtonCell.swift
 //  iOS Dev Questions
 //
 //  Created by Kyle Lee on 6/23/19.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-final class PillButtonCell: UITableViewCell {
+final class TextButtonCell: UITableViewCell {
     
     // MARK: - Communication
     
@@ -16,11 +16,11 @@ final class PillButtonCell: UITableViewCell {
     
     // MARK: - Subviews
     
-    lazy var button: PillButton = { [unowned self] in
-        let button = PillButton(title: buttonTitle)
+    lazy var button: TextButton = { [unowned self] in
+        let button = TextButton(title: buttonTitle)
         button.translatesAutoresizingMaskIntoConstraints = false
         return button
-    }()
+        }()
     
     
     // MARK: - Injected Properties
@@ -58,4 +58,5 @@ final class PillButtonCell: UITableViewCell {
     }
 }
 
-extension PillButtonCell: IdentifiableCell {}
+extension TextButtonCell: IdentifiableCell {}
+

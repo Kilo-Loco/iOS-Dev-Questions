@@ -1,5 +1,5 @@
 //
-//  PillButton.swift
+//  TextButtton.swift
 //  iOS Dev Questions
 //
 //  Created by Kyle Lee on 6/23/19.
@@ -8,18 +8,23 @@
 
 import UIKit
 
-/// A button with rounded corners like a pill with a gradient background
-class PillButton: UIButton {
+/// A button displayed as text.
+class TextButton: UIButton {
     
     // MARK: - Communication
     
     var didTap: EmptyClosure?
+    
+    // MARK: - Subviews
+    
+    private lazy var gradientView: GradientView = GradientView(gradientLayer: gradientLayer)
     
     
     // MARK: - Injected Properties
     
     private let title: String
     private let gradientLayer: CAGradientLayer
+    
     
     // MARK: - Initializers
     
@@ -42,23 +47,23 @@ class PillButton: UIButton {
         return CGSize(width: 250, height: 50)
     }
     
+    override func layoutSubviews() {
+        super.layoutSubviews()
+        gradientView.frame = bounds
+    }
+    
     override func layoutSublayers(of layer: CALayer) {
         super.layoutSublayers(of: layer)
-        let cornerRadius = bounds.height / 2
-        layer.cornerRadius = cornerRadius
-        
-        gradientLayer.frame = bounds
-        gradientLayer.cornerRadius = cornerRadius
+        gradientLayer.frame = gradientView.bounds
     }
     
     private func setup() {
-        layer.addSublayer(gradientLayer)
-        
         setTitle(title, for: .normal)
         
         titleLabel?.font = .preferredFont(forTextStyle: .headline)
         
-        addTarget(self, action: #selector(didReceiveTap), for: .touchUpInside)
+        gradientView.mask = titleLabel
+        addSubview(gradientView)
     }
     
     

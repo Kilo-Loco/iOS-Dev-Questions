@@ -43,7 +43,7 @@ final class OnboardingFlow {
             onboardingVC.dismiss(animated: true)
             self?.finishOnboarding()
         }
-        rootViewController.present(onboardingVC, animated: true)
+        rootViewController.present(onboardingVC, animated: false)
     }
     
     
