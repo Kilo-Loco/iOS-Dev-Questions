@@ -40,9 +40,10 @@ final class AppContext: NSObject {
         if userSettings.bool(for: .didFinishOnboarding) {
             // User has already gone throug onboarding
             
-            if userSettings.bool(for: .userHasSignedIn) {
+            if let userData = userSettings.value(for: .userData) as? Data,
+                let user = try? JSONDecoder().decode(User.self, from: userData) {
                 // User has successfully signed in
-                return .session
+                return .session(user)
                 
             } else {
                 // User is not signed in
@@ -84,6 +85,6 @@ extension AppContext {
         case auth(userShouldLogin: Bool)
         
         // User has successfully signed in and can use the main app
-        case session
+        case session(User)
     }
 }

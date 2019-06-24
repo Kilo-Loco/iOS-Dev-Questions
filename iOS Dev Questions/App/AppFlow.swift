@@ -53,8 +53,7 @@ final class AppFlow {
         switch context.state {
         case .onboarding: startOnboardingFlow()
         case .auth(let userShouldLogin): startAuthFlow(userShouldLogin: userShouldLogin)
-        case .session: break
-//            startSessionFlow()
+        case .session(let user): startSessionFlow(with: user)
         }
         
         return true
@@ -78,7 +77,14 @@ final class AppFlow {
         } else {
             authFlow.startSignUp(with: rootViewController)
         }
-        authFlow.signIn = { [weak self] in self?.startSessionFlow(with: $0) }
+        
+        authFlow.signIn = { [weak self] in
+            
+            if let userData = try? JSONEncoder().encode($0) {
+                self?.context.userSettings.set(userData, for: .userData)
+            }
+            self?.startSessionFlow(with: $0)
+        }
     }
     
     /// Responsible for configuring the main flow and navigating after logging out

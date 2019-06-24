@@ -49,7 +49,9 @@ extension UserSettings {
     /// All possible keys that can be read and written to
     enum Key: String {
         case didFinishOnboarding
-        case userHasSignedIn
+        
+        // #warning change this
+        case userData
     }
 }
 
