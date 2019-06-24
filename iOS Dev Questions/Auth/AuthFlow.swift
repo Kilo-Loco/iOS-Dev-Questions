@@ -54,6 +54,14 @@ final class AuthFlow {
                 }
             })
         }
+        
+        signUpVC.showLoginScreen = { [weak self, signUpVC] in
+            if signUpVC.presentingViewController?.isKind(of: LoginViewController.self) == true {
+                signUpVC.dismiss(animated: true)
+            } else {
+                self?.startLogin(with: signUpVC)
+            }
+        }
         rootViewController.present(signUpVC, animated: true)
     }
     
@@ -61,6 +69,18 @@ final class AuthFlow {
     ///
     /// - Parameter rootViewController: The presenting view controller.
     func startLogin(with rootViewController: UIViewController) {
+        let loginVC = LoginViewController()
+        loginVC.didProvideLoginCredentials = {
+            print($1)
+        }
         
+        loginVC.showSignUpScreen = { [weak self, loginVC] in
+            if loginVC.presentingViewController?.isKind(of: SignUpViewController.self) == true {
+                loginVC.dismiss(animated: true)
+            } else {
+                self?.startSignUp(with: loginVC)
+            }
+        }
+        rootViewController.present(loginVC, animated: true)
     }
 }

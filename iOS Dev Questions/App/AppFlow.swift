@@ -74,6 +74,7 @@ final class AppFlow {
     /// Responsible for configuring the auth flow and handling flow after it has finished
     private func startAuthFlow() {
         authFlow.startSignUp(with: rootViewController)
+//        authFlow.startLogin(with: rootViewController)
         authFlow.signIn = { [weak self] in self?.startSessionFlow(with: $0) }
     }
     

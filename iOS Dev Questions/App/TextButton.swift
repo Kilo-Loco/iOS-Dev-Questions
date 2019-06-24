@@ -1,5 +1,5 @@
 //
-//  TextButtton.swift
+//  TextButton.swift
 //  iOS Dev Questions
 //
 //  Created by Kyle Lee on 6/23/19.
@@ -15,9 +15,14 @@ class TextButton: UIButton {
     
     var didTap: EmptyClosure?
     
+    
     // MARK: - Subviews
     
-    private lazy var gradientView: GradientView = GradientView(gradientLayer: gradientLayer)
+    private lazy var gradientView: GradientView = {
+        let view = GradientView(gradientLayer: gradientLayer)
+        view.isUserInteractionEnabled = true
+        return view
+    }()
     
     
     // MARK: - Injected Properties
@@ -62,6 +67,8 @@ class TextButton: UIButton {
         
         titleLabel?.font = .preferredFont(forTextStyle: .headline)
         
+        let tapRecognizer = UITapGestureRecognizer(target: self, action: #selector(didReceiveTap))
+        gradientView.addGestureRecognizer(tapRecognizer)
         gradientView.mask = titleLabel
         addSubview(gradientView)
     }

@@ -43,7 +43,7 @@
 		9EA067D922C0113F006326D1 /* FullNameInputFieldCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EA067D822C0113F006326D1 /* FullNameInputFieldCell.swift */; };
 		9EA067DB22C01658006326D1 /* PillButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EA067DA22C01658006326D1 /* PillButton.swift */; };
 		9EA067DD22C01A22006326D1 /* PillButtonCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EA067DC22C01A22006326D1 /* PillButtonCell.swift */; };
-		9EA067DF22C0230E006326D1 /* TextButtton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EA067DE22C0230E006326D1 /* TextButtton.swift */; };
+		9EA067DF22C0230E006326D1 /* TextButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EA067DE22C0230E006326D1 /* TextButton.swift */; };
 		9EA067E122C026DA006326D1 /* TextButtonCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EA067E022C026DA006326D1 /* TextButtonCell.swift */; };
 		9EA067E322C03E89006326D1 /* SignUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EA067E222C03E89006326D1 /* SignUpView.swift */; };
 		9EA067E522C047B9006326D1 /* Name.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EA067E422C047B9006326D1 /* Name.swift */; };
@@ -53,6 +53,8 @@
 		9EA067EF22C057C2006326D1 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9EA067EE22C057C2006326D1 /* GoogleService-Info.plist */; };
 		9EA067F122C05945006326D1 /* FirebaseAuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EA067F022C05945006326D1 /* FirebaseAuthService.swift */; };
 		9EA067F322C05F49006326D1 /* AlertService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EA067F222C05F49006326D1 /* AlertService.swift */; };
+		9EA067F522C0650A006326D1 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EA067F422C0650A006326D1 /* LoginViewController.swift */; };
+		9EA067F722C06533006326D1 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EA067F622C06533006326D1 /* LoginView.swift */; };
 		9FE301ADC631501747BD3113 /* Pods_iOS_Dev_QuestionsTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E97AF6DBE90134B49DAFAFA1 /* Pods_iOS_Dev_QuestionsTests.framework */; };
 		E88AC639D1E5EC6612DF5146 /* Pods_iOS_Dev_Questions.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8EDE94D1873241EB9B6F501B /* Pods_iOS_Dev_Questions.framework */; };
 /* End PBXBuildFile section */
@@ -112,7 +114,7 @@
 		9EA067D822C0113F006326D1 /* FullNameInputFieldCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FullNameInputFieldCell.swift; sourceTree = "<group>"; };
 		9EA067DA22C01658006326D1 /* PillButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PillButton.swift; sourceTree = "<group>"; };
 		9EA067DC22C01A22006326D1 /* PillButtonCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PillButtonCell.swift; sourceTree = "<group>"; };
-		9EA067DE22C0230E006326D1 /* TextButtton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextButtton.swift; sourceTree = "<group>"; };
+		9EA067DE22C0230E006326D1 /* TextButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextButton.swift; sourceTree = "<group>"; };
 		9EA067E022C026DA006326D1 /* TextButtonCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextButtonCell.swift; sourceTree = "<group>"; };
 		9EA067E222C03E89006326D1 /* SignUpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpView.swift; sourceTree = "<group>"; };
 		9EA067E422C047B9006326D1 /* Name.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Name.swift; sourceTree = "<group>"; };
@@ -122,6 +124,8 @@
 		9EA067EE22C057C2006326D1 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		9EA067F022C05945006326D1 /* FirebaseAuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseAuthService.swift; sourceTree = "<group>"; };
 		9EA067F222C05F49006326D1 /* AlertService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertService.swift; sourceTree = "<group>"; };
+		9EA067F422C0650A006326D1 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		9EA067F622C06533006326D1 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		CAAF496EFBCE07B36FC6D893 /* Pods-iOS Dev QuestionsTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOS Dev QuestionsTests.release.xcconfig"; path = "Target Support Files/Pods-iOS Dev QuestionsTests/Pods-iOS Dev QuestionsTests.release.xcconfig"; sourceTree = "<group>"; };
 		E97AF6DBE90134B49DAFAFA1 /* Pods_iOS_Dev_QuestionsTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_iOS_Dev_QuestionsTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -211,6 +215,8 @@
 				9EA067E822C04B72006326D1 /* Password.swift */,
 				9EA067EA22C04CA6006326D1 /* SignUpCredentials.swift */,
 				9EA067F022C05945006326D1 /* FirebaseAuthService.swift */,
+				9EA067F422C0650A006326D1 /* LoginViewController.swift */,
+				9EA067F622C06533006326D1 /* LoginView.swift */,
 			);
 			path = Auth;
 			sourceTree = "<group>";
@@ -249,7 +255,7 @@
 				9EA067D422C006F2006326D1 /* GradientView.swift */,
 				9EA067DA22C01658006326D1 /* PillButton.swift */,
 				9EA067DC22C01A22006326D1 /* PillButtonCell.swift */,
-				9EA067DE22C0230E006326D1 /* TextButtton.swift */,
+				9EA067DE22C0230E006326D1 /* TextButton.swift */,
 				9EA067E022C026DA006326D1 /* TextButtonCell.swift */,
 				9EA067F222C05F49006326D1 /* AlertService.swift */,
 			);
@@ -462,7 +468,7 @@
 				9EA067E922C04B72006326D1 /* Password.swift in Sources */,
 				9EA0679E22BDFD81006326D1 /* OnboardingFlow.swift in Sources */,
 				9EA067D322C003CE006326D1 /* EmailInputFieldCell.swift in Sources */,
-				9EA067DF22C0230E006326D1 /* TextButtton.swift in Sources */,
+				9EA067DF22C0230E006326D1 /* TextButton.swift in Sources */,
 				9EA067E722C04A27006326D1 /* Email.swift in Sources */,
 				9EA067A022BE0140006326D1 /* InitialViewController.swift in Sources */,
 				9EA0679622BDF536006326D1 /* AppContext.swift in Sources */,
@@ -486,10 +492,12 @@
 				9EA067CF22BFFC93006326D1 /* InputFieldCell.swift in Sources */,
 				9EA0677B22BDF0AF006326D1 /* iOS_Dev_Questions.xcdatamodeld in Sources */,
 				9EA067BD22BE1B1A006326D1 /* OnboardData.swift in Sources */,
+				9EA067F722C06533006326D1 /* LoginView.swift in Sources */,
 				9EA067AC22BE0E60006326D1 /* PersistenceService.swift in Sources */,
 				9EA067E522C047B9006326D1 /* Name.swift in Sources */,
 				9EA067F122C05945006326D1 /* FirebaseAuthService.swift in Sources */,
 				9EA067A822BE0C28006326D1 /* SessionFlow.swift in Sources */,
+				9EA067F522C0650A006326D1 /* LoginViewController.swift in Sources */,
 				9EA067DB22C01658006326D1 /* PillButton.swift in Sources */,
 				9EA067A222BE02EB006326D1 /* AuthFlow.swift in Sources */,
 				9EA067B922BE1A44006326D1 /* OnboardingView.swift in Sources */,
